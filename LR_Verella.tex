@@ -1,0 +1,37 @@
+\documentclass[11pt]{lettre}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french.dbf]{babel}
+%\newcommand{\senderName}{Service d'Admission \`{a} l'Universit\'{e} Toulouse Capitole 1}
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+\date{Le 10 mai 2018}
+\begin{document}
+	\begin{letter}{\hfill} % Utiliser ~ si pas de destinataire
+	%	\name{\senderName}
+		\address{Service d'Admission \\ \`{a} l'Universit\'{e} Toulouse Capitole 1 \\ 2, rue Doyen-Gabriel-Marty \\ Toulouse cedex 9}
+		\email{www.ut-capitole.fr}
+		\telephone{+33 (0)5 61 63 35 00}
+		\nofax{}
+		\lieu{Port-au-Prince}
+	%	\def\concname{Objet :~}
+		\signature{\begin{tabular}{@{}p{.5in}p{2in}@{}}
+				& \hrulefill \\
+				& Frantz V\'{e}rella \\
+				& Professeur d'Econom\'{e}trie\\
+				& Email: fverella@gmail.com\\
+		\end{tabular}}
+	
+		\conc{ Lettre de Recommandation}
+		\NoRule
+		
+		\opening{Madame, Monsieur,}
+		
+		J'ai l'honneur de recommander \`{a} vos services comp\'{e}tents le dossier de demande d'admission au Master 2 parcours-type Econom\'{e}trie et Statistiques de Monsieur Alexandro Disla. En effet, Alexandro est un jeune \'{e}conomiste travaillant au minist\`{e}re de la planification et de la coop\'{e}ration externe. il a re\c{c}u sa formation au Centre de Techniques de Planification et d'Economie Appliqu\'{e}e (CTPEA), une \'{e}cole sup\'{e}rieure formant des planificateurs, statisticiens et des sp\'{e}cialistes en \'{e}conomie appliqu\'{e}e. 
+		
+		J'ai pu \'{e}valuer ces comp\'{e}tences \'{e}conom\'{e}triques et statisitiques \`{a} travers le cours que je dispense chaque ann\'{e}e \`{a} la Banque de la R\'{e}publique d'Ha\"{i}ti, pour les jeunes cadres de la fonction publique. En ce sens, je me porte garant de sa capacit\'{e} naturelle pour apprendre, utiliser et  transmettre  ces connaissances. Il s'est ainsi port\'{e} volontaire pour m'aider \`{a} r\'{e}diger un livre titr\'{e}: "M\'{e}thodes Analytiques de l'\'{e}conom\'{e}trie". Ce livre est le fruit de mes ann\'{e}es d'enseignement et Alexandro m'a aid\'{e} au niveau de son \'{e}dition, qui est enti\`{e}rement \'{e}crit en \LaTeX. Il s'est aussi port\'{e} volontaire pour des s\'{e}ances de travaux pratiques au niveau de l'universit\'{e} Quisqueya. Sa t\^{a}che consistait \`{a} initier les \'{e}tudiants au logiciel R, que je lui avais pr\'{e}alablement introduit aux cours de cette formation. Ce qui t\'{e}moigne en fin de compte de sa passion pour la statistique et la mod\'{e}lisation.
+		Ceci \'{e}tant dit,fort de ces raisons, je vous demanderais de bien vouloir accepter son dossier d'admission au sein de votre prestigieuse universit\'{e} pour qu'il puisse r\'{e}aliser son potentiel. 
+		\closing{Veuillez agr\'{e}er, \textbf{Madame, Monsieur}, l'expression de ma consid\'{e}ration la meilleure}	
+	\end{letter}
+\end{document}
