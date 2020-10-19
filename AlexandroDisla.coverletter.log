@@ -1,0 +1,82 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.8.11)  19 OCT 2020 15:44
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**AlexandroDisla.coverletter.tex
+(./AlexandroDisla.coverletter.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-08-07>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/letter.cls
+Document Class: letter 2014/09/29 v1.2z Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\longindentation=\dimen134
+\indentedwidth=\dimen135
+\labelcount=\count168
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/newcent.sty
+Package: newcent 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-08-07 L3 backend support: dvips
+\l__pdf_internal_box=\box45
+\g__pdf_backend_object_int=\count169
+\l__pdf_backend_content_box=\box46
+\l__pdf_backend_model_box=\box47
+\g__pdf_backend_annotation_int=\count170
+\g__pdf_backend_link_int=\count171
+\g__pdf_backend_link_sf_int=\count172
+)
+No file AlexandroDisla.coverletter.aux.
+\openout1 = `AlexandroDisla.coverletter.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Trying to load font information for OT1+pnc on input line 3
+5.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pnc.fd
+File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
+)
+LaTeX Font Info:    Trying to load font information for OMS+pnc on input line 5
+1.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omspnc.fd
+File: omspnc.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pnc/b/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 51.
+ [1
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 82.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 82.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 82.
+ [2]
+(./AlexandroDisla.coverletter.aux) ) 
+Here is how much of TeX's memory you used:
+ 388 strings out of 480894
+ 7125 string characters out of 5908108
+ 248334 words of memory out of 5000000
+ 16064 multiletter control sequences out of 15000+600000
+ 539908 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,6n,25p,1174b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on AlexandroDisla.coverletter.dvi (2 pages, 6044 bytes).
