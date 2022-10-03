@@ -1,10 +1,11 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[inline]{enumitem}
 % Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
 \usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
 % Largeur de la colonne de gauche pour les dates
+\usepackage{progressbar}
 \setlength{\hintscolumnwidth}{2.7cm}
 \title{Economiste Appliqu\'{e}}
 \firstname{Alexandro}
@@ -22,7 +23,17 @@
 \vspace*{-2.5\baselineskip}
 %section
 \section{Expériences}
-\cventry{2015 \`{a} nos jours}{Economiste}{Service de Planification Globale}{Direction de Planification Economique et Sociale}{Minist\`{e}re de Planification et de la Coop\'{e}ration Externe}
+\cventry{Mars 2021 \`{a} nos jours}{Monitoring and Evaluation Officer}{D\'{e}partement M\&E}{Projet ImpactYouth}{Caris Fondation Internationale}
+{
+	\begin{itemize}%
+		\item  placeholder
+\end{itemize}}
+\cventry{Octobre 2021 \`{a} D\'{e}cembre 2021}{Consultant en D\'{e}velopment Logiciel}{CassionSoft}{projet consistant a ecrire un service api REST avec authentification et authorisation ecrit dans le cadre de l'analyse des formulaires fournis par l'equipe IT de l'instituion}{UNOPS}
+{
+	\begin{itemize}%
+		\item  placeholder
+\end{itemize}}
+\cventry{Novembre 2015 \`{a} Mars 2021}{Economiste}{Service de Planification Globale}{Direction de Planification Economique et Sociale}{Minist\`{e}re de Planification et de la Coop\'{e}ration Externe}
 {
 	\begin{itemize}%
 		\item  Analyser et suivre sur une base hebdomadaire  la tendance des principaux aggr\'{e}gats macro\'{e}conomiques;
@@ -41,14 +52,16 @@
 \section{Formations}
 \cventry{2009--2010}{Baccalauréat}{Institution Saint-Louis de Gonzague}{Philo Section C}{\textit{mention Bien}}{}
 \cventry{2010--2014}{Dipl\^{o}me d'\'{E}tudes Sup\'{e}rieures}{Centre de Techniques de Planification et d'\'{E}conomie appliqu\'{e}e (C.T.P.E.A)}{}{\textit{Economie Appliqu\'{e}e}}{}
-%section
-\section{Certifications}
-\cvitem{Avril 2018}{The complete SQL bootcamp}
-\cvitem{Nov 2018}{R for data science and machine learning bootcamp}
-\cvitem{Nov 2018}{Python for financial analysis and algorithmic trading}
-\cvitem{Mars 2019}{Javascript basics and Object-Oriented programming}
-\cvitem{Ao\^{u}t 2019}{The complete python programming course for beginners}
-%section
+\cventry{Mars 2019--Juillet 2019}{Participation au Programme de Software Engineering}{Flatironschool Bootcamp}{\textit{Fullstack React Rails}}{}{}
+
+%\section{Certifications}
+%\cvitem{Avril 2018}{The complete SQL bootcamp}
+%\cvitem{Nov 2018}{R for data science and machine learning bootcamp}
+%\cvitem{Nov 2018}{Python for financial analysis and algorithmic trading}
+%\cvitem{Mars 2019}{Javascript basics and Object-Oriented programming}
+%\cvitem{Ao\^{u}t 2019}{The complete python programming course for beginners}
+
+
 \section{Compétences en Informatique et en Langue}
 \subsection{Informatique}
 \cvitem{Programmation}{HTML, CSS, Javascript, Python, SQL, NoSQL, Swift, R}
@@ -56,10 +69,37 @@
 \cvitem{Outils}{Microsoft Office, \LaTeX, Markdown, Git Version Control System (Github)}
 \cvitem{D.S \& Statistiques}{Rstudio, Jupyter Notebook}
 \subsection{Langue}
-\cvlanguage{Anglais}{lu, écrit, parlé}{}
-\cvlanguage{Fran\c{c}ais}{lu, écrit, parlé}{}
-\cvlanguage{Cr\'{e}ole}{lu, écrit, parlé}{}
-% section
+\cvlanguage{Anglais}{
+\progressbar[
+	emptycolor=gray,
+	filledcolor=cyan,
+	subdivisions=4,
+	ticksheight=0.5,
+	tickswidth=0.8 mm,
+	heightr= 1,
+	tickscolor=lime
+]{1}}{}
+\cvlanguage{Fran\c{c}ais}{
+	\progressbar[
+		emptycolor=gray,
+		filledcolor=cyan,
+		subdivisions=4,
+		ticksheight=0.5,
+		tickswidth=0.8 mm,
+		heightr= 1,
+		tickscolor=lime
+	]{1}}{}
+\cvlanguage{Cr\'{e}ole}{
+	\progressbar[
+		emptycolor=gray,
+		filledcolor=cyan,
+		subdivisions=4,
+		ticksheight=0.5,
+		tickswidth=0.8 mm,
+		heightr= 1,
+		tickscolor=lime
+	]{1}}{}
+
 \section{Centres d'intérêt}
 \cvitem{}{Suivi de tutorial  sur les concepts fondamentaux de machine learning, de d\'{e}veloppement d'application mobile, web et desktop sur des plateformes en lignes.}
 \end{document}
