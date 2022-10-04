@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[inline]{enumitem}
@@ -20,8 +20,7 @@
 \begin{document}
 \maketitle
 % Marge négative entre le titre et la partie expérience, pour gagner de la place
-\vspace*{-2.5\baselineskip}
-%section
+%\vspace*{-2.5\baselineskip}
 \section{Expériences}
 \cventry{Mars 2021 \`{a} nos jours}{Monitoring and Evaluation Officer}{D\'{e}partement M\&E}{Projet ImpactYouth}{Caris Fondation Internationale}
 {
@@ -40,15 +39,16 @@
 		\item Participer dans l'\'{e}laboration des diff\'{e}rents rapports de mise en oeuvre des politiques publiques;
 		\item Travailler de concert avec le service statistique et mod\'{e}lisation dans les simulations des politiques d'impact \`{a} travers le "Mod\`{e}le de Planification du D\'{e}veloppement";
 \end{itemize}}
-\cventry{Juin 2020 \`{a} Ao\^{u}t 2020}{Accompagnement (\`{a} titre b\'{e}n\'{e}vol) d'un ancien \'{e}tudiant}{du Centre de Techniques de Planification et d'\'{E}conomie appliqu\'{e}e (C.T.P.E.A)}{dans le cadre du travail intitul\'{e}:"Caract\'{e}ristiques des femmes victimes de violences conjugales pour une meilleure politique publique en Ha\"{i}ti"}{}{
-	\begin{itemize}%
-		\item Estimation des differents tests statistiques et du mod\`{e}le logistique avec le logiciel R;
-\end{itemize}}
-\cventry{Ao\^{u}t 2018 \`{a} D\'{e}c 2018}{Responsable de travaux dirig\'{e}s}{\`{a} la Banque de la R\'{e}publique Ha\"{i}ti (BRH)}{pour le cours de m\'{e}thode analytique de l'\'{e}conom\'{e}trie dispens\'{e} par le professeur Frantz V\'{e}rella}{}{
-	\begin{itemize}
-		\item Initiation et  travaux pratiques avec le logiciel R;
-\end{itemize}}
-% section
+
+%\cventry{Juin 2020 \`{a} Ao\^{u}t 2020}{Accompagnement (\`{a} titre b\'{e}n\'{e}vol) d'un ancien \'{e}tudiant}{du Centre de Techniques de Planification et d'\'{E}conomie appliqu\'{e}e (C.T.P.E.A)}{dans le cadre du travail intitul\'{e}:"Caract\'{e}ristiques des femmes victimes de violences conjugales pour une meilleure politique publique en Ha\"{i}ti"}{}{
+%	\begin{itemize}%
+%		\item Estimation des differents tests statistiques et du mod\`{e}le logistique avec le logiciel R;
+%\end{itemize}}
+%\cventry{Ao\^{u}t 2018 \`{a} D\'{e}c 2018}{Responsable de travaux dirig\'{e}s}{\`{a} la Banque de la R\'{e}publique Ha\"{i}ti (BRH)}{pour le cours de m\'{e}thode analytique de l'\'{e}conom\'{e}trie dispens\'{e} par le professeur Frantz V\'{e}rella}{}{
+%	\begin{itemize}
+%		\item Initiation et  travaux pratiques avec le logiciel R;
+%\end{itemize}}
+
 \section{Formations}
 \cventry{2009--2010}{Baccalauréat}{Institution Saint-Louis de Gonzague}{Philo Section C}{\textit{mention Bien}}{}
 \cventry{2010--2014}{Dipl\^{o}me d'\'{E}tudes Sup\'{e}rieures}{Centre de Techniques de Planification et d'\'{E}conomie appliqu\'{e}e (C.T.P.E.A)}{}{\textit{Economie Appliqu\'{e}e}}{}
@@ -62,28 +62,30 @@
 %\cvitem{Ao\^{u}t 2019}{The complete python programming course for beginners}
 
 
-\section{Compétences en Informatique et en Langue}
-\subsection{Informatique}
-\cvitem{Programmation}{HTML, CSS, Javascript, Python, SQL, NoSQL, Swift, R}
-\cvitem{Opera. System}{MacOS, GNU/Linux, Windows OS}
-\cvitem{Outils}{Microsoft Office, \LaTeX, Markdown, Git Version Control System (Github)}
-\cvitem{D.S \& Statistiques}{Rstudio, Jupyter Notebook}
+\section{Compétences}
+
+\subsection{Statistiques \& donn\'{e}es}
+\cvdoubleitem{Analyse de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
+\cvdoubleitem{Visualisation de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
+\cvdoubleitem{Data Wrangling}{pb}{Automatisation scripting}{pb}
+\cvdoubleitem{Webscraping}{pb}{Processus d'ing\'{e}nierie de donn\'{e}}{pb}
+\cvdoubleitem{SQL scripting}{pb}{Comcare, ODK}{pb}
 \subsection{Langue}
 \cvlanguage{Anglais}{
-\progressbar[
-	emptycolor=gray,
-	filledcolor=cyan,
-	subdivisions=4,
-	ticksheight=0.5,
-	tickswidth=0.8 mm,
-	heightr= 1,
-	tickscolor=lime
-]{1}}{}
-\cvlanguage{Fran\c{c}ais}{
 	\progressbar[
 		emptycolor=gray,
 		filledcolor=cyan,
 		subdivisions=4,
+		ticksheight=0.5,
+		tickswidth=0.8 mm,
+		heightr= 1,
+		tickscolor=lime
+		]{1}}{}
+		\cvlanguage{Fran\c{c}ais}{
+			\progressbar[
+				emptycolor=white,
+				filledcolor=cyan,
+				subdivisions=4,
 		ticksheight=0.5,
 		tickswidth=0.8 mm,
 		heightr= 1,
@@ -100,6 +102,12 @@
 		tickscolor=lime
 	]{1}}{}
 
-\section{Centres d'intérêt}
-\cvitem{}{Suivi de tutorial  sur les concepts fondamentaux de machine learning, de d\'{e}veloppement d'application mobile, web et desktop sur des plateformes en lignes.}
-\end{document}
+
+%\subsection{Outils techniques}
+%cvitem{Quarto}{syst\`{e}me de publication scientific et technique}
+	
+
+%\section{Centres d'intérêt}
+%\cvitem{}{Suivi de tutorial  sur les concepts fondamentaux de machine learning, de d\'{e}veloppement d'application mobile, web et desktop sur des plateformes en lignes.}
+%\end{document}
+
