@@ -1,11 +1,21 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[inline]{enumitem}
 % Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
 \usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
 % Largeur de la colonne de gauche pour les dates
-\usepackage{progressbar}
+\usepackage
+[
+	emptycolor=white,
+	filledcolor=cyan,
+	subdivisions=4,
+	ticksheight=0.5,
+	tickswidth=0.8 mm,
+	heightr=1,
+	tickscolor=green,
+	borderwidth=2pt
+]{progressbar}
 %\usepackage[dvipsnames]{xcolor}
 \setlength{\hintscolumnwidth}{2.7cm}
 \title{Economiste Appliqu\'{e}}
@@ -77,44 +87,23 @@
 \cvlistdoubleitem{Webscraping pb}{Processus d'ing\'{e}nierie de donn\'{e} pb}
 \cvlistdoubleitem{SQL scripting pb}{Comcare, ODK pb}
 \subsection{Outils techniques}
-\cvlistitem{Quarto syst\`{e}me de publication scientific et technique:  pb}
+\cvlistitem{
+	Quarto syst\`{e}me de publication scientific et technique:\newline 
+	\progressbar{0.75}
+}
 
 \subsection{Langue}
 \cvlistitem{
 	Anglais:\newline
-	\progressbar[
-		emptycolor=gray,
-		filledcolor=cyan,
-		subdivisions=4,
-		ticksheight=0.5,
-		tickswidth=0.8 mm,
-		heightr= 1,
-		tickscolor=green
-	]{1}
+	\progressbar{1}
 }
 \cvlistitem{
 	Fran\c{c}ais:\newline
-	\progressbar[
-		emptycolor=white,
-		filledcolor=cyan,
-		subdivisions=4,
-		ticksheight=0.5,
-		tickswidth=0.8 mm,
-		heightr= 1,
-		tickscolor=green
-	]{1}
+	\progressbar{1}
 }
 \cvlistitem{
 	Cr\'{e}ole:\newline 
-	\progressbar[
-		emptycolor=gray,
-		filledcolor=cyan,
-		subdivisions=4,
-		ticksheight=0.5,
-		tickswidth=0.8 mm,
-		heightr= 1,
-		tickscolor=green
-	]{1}
+	\progressbar{1}
 }
 
 
