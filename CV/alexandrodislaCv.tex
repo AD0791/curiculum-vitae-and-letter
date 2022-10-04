@@ -6,6 +6,7 @@
 \usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
 % Largeur de la colonne de gauche pour les dates
 \usepackage{progressbar}
+%\usepackage[dvipsnames]{xcolor}
 \setlength{\hintscolumnwidth}{2.7cm}
 \title{Economiste Appliqu\'{e}}
 \firstname{Alexandro}
@@ -65,13 +66,22 @@
 \section{Compétences}
 
 \subsection{Statistiques \& donn\'{e}es}
-\cvdoubleitem{Analyse de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
-\cvdoubleitem{Visualisation de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
-\cvdoubleitem{Data Wrangling}{pb}{Automatisation scripting}{pb}
-\cvdoubleitem{Webscraping}{pb}{Processus d'ing\'{e}nierie de donn\'{e}}{pb}
-\cvdoubleitem{SQL scripting}{pb}{Comcare, ODK}{pb}
+%\cvdoubleitem{Analyse de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
+%\cvdoubleitem{Visualisation de donn\'{e}e}{pb}{G\'{e}oanalyse}{pb}
+%\cvdoubleitem{Data Wrangling}{pb}{Automatisation scripting}{pb}
+%\cvdoubleitem{Webscraping}{pb}{Processus d'ing\'{e}nierie de donn\'{e}}{pb}
+%\cvdoubleitem{SQL scripting}{pb}{Comcare, ODK}{pb}
+\cvlistdoubleitem{Analyse de donn\'{e}e pb}{G\'{e}oanalyse pb}
+\cvlistdoubleitem{Visualisation de donn\'{e}e pb}{G\'{e}oanalyse pb}
+\cvlistdoubleitem{Data Wrangling pb}{Automatisation scripting pb}
+\cvlistdoubleitem{Webscraping pb}{Processus d'ing\'{e}nierie de donn\'{e} pb}
+\cvlistdoubleitem{SQL scripting pb}{Comcare, ODK pb}
+\subsection{Outils techniques}
+\cvlistitem{Quarto syst\`{e}me de publication scientific et technique:  pb}
+
 \subsection{Langue}
-\cvlanguage{Anglais}{
+\cvlistitem{
+	Anglais:\newline
 	\progressbar[
 		emptycolor=gray,
 		filledcolor=cyan,
@@ -79,19 +89,23 @@
 		ticksheight=0.5,
 		tickswidth=0.8 mm,
 		heightr= 1,
-		tickscolor=lime
-		]{1}}{}
-		\cvlanguage{Fran\c{c}ais}{
-			\progressbar[
-				emptycolor=white,
-				filledcolor=cyan,
-				subdivisions=4,
+		tickscolor=green
+	]{1}
+}
+\cvlistitem{
+	Fran\c{c}ais:\newline
+	\progressbar[
+		emptycolor=white,
+		filledcolor=cyan,
+		subdivisions=4,
 		ticksheight=0.5,
 		tickswidth=0.8 mm,
 		heightr= 1,
-		tickscolor=lime
-	]{1}}{}
-\cvlanguage{Cr\'{e}ole}{
+		tickscolor=green
+	]{1}
+}
+\cvlistitem{
+	Cr\'{e}ole:\newline 
 	\progressbar[
 		emptycolor=gray,
 		filledcolor=cyan,
@@ -99,15 +113,12 @@
 		ticksheight=0.5,
 		tickswidth=0.8 mm,
 		heightr= 1,
-		tickscolor=lime
-	]{1}}{}
+		tickscolor=green
+	]{1}
+}
 
-
-%\subsection{Outils techniques}
-%cvitem{Quarto}{syst\`{e}me de publication scientific et technique}
-	
 
 %\section{Centres d'intérêt}
 %\cvitem{}{Suivi de tutorial  sur les concepts fondamentaux de machine learning, de d\'{e}veloppement d'application mobile, web et desktop sur des plateformes en lignes.}
-%\end{document}
+\end{document}
 
