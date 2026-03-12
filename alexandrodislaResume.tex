@@ -1,76 +1,94 @@
-\documentclass[11pt,a4paper]{moderncv}
-\moderncvtheme[blue]{classic}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
-\usepackage[inline]{enumitem}
-% Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
-\usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
-% Largeur de la colonne de gauche pour les dates
-\setlength{\hintscolumnwidth}{2.7cm}
-\title{Applied Economist}
-\firstname{Alexandro}
-\familyname{Disla}
-\address{Carrefour Ism\'{e}, impasse F\'{e}n\'{e}lon \# 25}{Pernier 23}
-\mobile{(509)41483700}
+\usepackage[scale=0.8]{geometry}
+\usepackage{helvet}
+
+\name{Alexandro}{Disla}
+\title{Analyst–Programmer | Data \& Backend Developer}
+\address{Rue Saint-Louis Jeanty \#14, Route de Frère}{}{}
+\phone[mobile]{(+509) 4148-3700}
 \email{alexandrodisla@hotmail.com}
-\social[github]{AD0791}
-\social[twitter]{AD07991}
-%\extrainfo{\\}
-%\extrainfo{26 ans}
+\extrainfo{GitHub: \url{https://github.com/AD0791}}
+
 \begin{document}
-\maketitle
-% Marge négative entre le titre et la partie expérience, pour gagner de la place
-\vspace*{-2.5\baselineskip}
-%section
-\section{Experiences}
-\cventry{November 2015 - Present}{Economist / Analyst}{Global Planning Service}{Directorate of Economic and Social Planning}{Ministry of Planning and External Cooperation}
-{
-	\begin{itemize}%
-		\item  
-        Analyze and monitor on a weekly basis the trend of the main macroeconomic aggregates;
-		\item Participate in the development of various public policy implementation reports;
-		\item 
-        Work in concert with the statistical and modeling service in impact policy simulations through the "Information and Development Planning Model";
+\makecvtitle
+
+\section{Professional Profile}
+\cvitem{}{Versatile developer specialized in integration, automation, and data analysis, with over four years of experience in API development, database modeling, and business process optimization. Experienced in multi-system environments, I design and maintain reliable, well-documented, and secure IT solutions to support digital transformation and data-driven decision-making.}
+
+\cvitem{Key Strengths}{
+\begin{itemize}
+    \item Development of secure, containerized RESTful APIs (Docker);
+    \item Data automation and integration (SQL, ETL, Commcare, MySQL);
+    \item Visualization and reporting (Plotly, Matplotlib, Power BI, Looker Studio, RMarkdown, Quarto);
+    \item Documentation, version control, and collaboration (Git, DevOps mindset);
+    \item Cloud experience (AWS, Google Cloud, BigQuery, Apache Beam);
+    \item Analytical approach grounded in training in applied economics.
 \end{itemize}}
-\cventry{June 2020 - August 2020}{
-    Support (on a voluntary basis) of a former student}{ from the School of Planning and Applied Economics  (C.T.P.E.A)}{as part of the research paper entitled: "Characteristics of women victims of domestic violence for a better public policy in Haiti"}{}{
-	\begin{itemize}%
-		\item Estimation of the various statistical tests and the logistics model with the R software;
+
+\section{Professional Experience}
+\cventry{Feb 2026 -- Present}{Software Engineer}{Tekkod LLC}{Remote}{}{
+\begin{itemize}
+    \item Lead the "STS Mobile App Modernization" project, upgrading React Native from 0.65.1 to 0.74.x.
+    \item Migrated the architecture to Hermes engine, Java 17, and Gradle 8.8, enabling Bridgeless Mode.
+    \item Performed a full migration to Firebase v22 (Modular API) and replaced deprecated notifications with @notifee/react-native.
+    \item Conducted a Yoga 3.0 UI Audit to ensure layout consistency and React 18 compatibility.
+    \item Refactored core components and fixed asynchronous state updates in RewardsModal.
+    \item Update the looker studio dasboard to add search and filter capabilities.
 \end{itemize}}
-\cventry{August 2018 - December 2018}{Head of tutorials}{ at the Bank of the Republic of Haiti (BRH)}{for the course in analytical method of econometrics taught by the Professor Frantz Vérella}{}{
-	\begin{itemize}
-		\item 
-        Initiation and practical work with the R software and programming Language;
+
+\cventry{Oct 2023 -- Jan 2026}{mWater \& Data Analyst Consultant}{HANWASH}{Remote (Upwork)}{}{
+\begin{itemize}
+    \item Part-time contract. Collaborated with the M\&E team to resolve data management issues from field collection via mWater.
+    \item Designed and implemented dashboards to present results to stakeholders (Plotly, Matplotlib, Power BI, Looker Studio).
+    \item Created and deployed mWater surveys compliant with JMP standards, aligned with the logical framework and indicator matrix.
+    \item Produced training guides (PowerPoint) to help stakeholders and managers understand and use dashboards. Trained data entry teams on using the mWater mobile app.
 \end{itemize}}
-% section
-\section{Trainings}
-\cventry{2010-2014}{Diploma of Higher Studies}{School Planning and Applied Economics (C.T.P.E.A), Undergraduate level}{}{\textit{Applied Economics}}{}
-\cventry{2009-2010}{Baccalaureate}{Institution Saint-Louis de Gonzague high school}{Philo Section C}{\textit{mention well}}{}
-%section
-\section{Certifications}
-\cvitem{March 2019}{Javascript basics and Object-Oriented programming}
-\cvitem{August 2019}{The complete python programming course for beginners}
-\cvitem{November 2018}{R for data science and machine learning bootcamp}
-\cvitem{November 2018}{Python for financial analysis and algorithmic trading}
-\cvitem{April 2018}{The complete SQL bootcamp}
-%section
-\section{Computer and communication Skills}
-\subsection{Computer science}
-\cvitem{Programming}{HTML, CSS, Javascript, Python, SQL, NoSQL, Swift, R}
-\cvitem{Opera. System}{MacOS, GNU/Linux, Windows OS}
-\cvitem{Tools}{Microsoft Office, \LaTeX, Markdown, Git Version Control System (Github)}
-\cvitem{D.S \& Statistics}{Rstudio, Jupyter Notebook}
-\subsection{Communication}
-\cvlanguage{English}{
-    read, written, talked}{}
-\cvlanguage{French}{
-    read, written, talked}{}
-\cvlanguage{Creole}{
-    read, written, talked}{}
-% section
-\section{Hobbies}
-\cvitem{}{
-    Tutorial follow-up on the 
-    fundamental concepts of machine learning, 
-    mobile, web and desktop application development 
-    on online platforms.}
+
+\cventry{Mar 2021 -- May 2024}{Backend Developer}{Tekkod LLC}{}{}{
+\begin{itemize}
+    \item Part-time contract. Developed RESTful web services following best practices.
+    \item Implemented Docker containers and deployment pipelines. Secured APIs with JWT authentication.
+    \item Applied repository pattern, documented endpoints, and versioned via Git.
+    \item Built data pipeline to migrate MongoDB data to BigQuery via Apache Beam.
+    \item Created and maintained Looker Studio dashboards. Contributed to frontend tasks for React and React Native projects.
+\end{itemize}}
+
+\cventry{Oct 2021 -- Aug 2024}{Monitoring \& Evaluation Officer}{Impact Youth Project, Caris Foundation International}{}{}{
+\begin{itemize}
+    \item Designed digital data collection forms integrated into Commcare / HIVHaiti.
+    \item Automated activity tracking reports using Python and SQL.
+    \item Developed REST endpoints for internal dashboards. Created and deployed weekly dashboards via AWS using RMarkdown and Quarto.
+    \item Maintained EID Power BI dashboard with biweekly updates. Ensured data quality and automated MySQL integration.
+\end{itemize}}
+
+\cventry{Nov 2015 -- Mar 2021}{Software Development Consultant (UNOPS Project)}{CassionSoft}{}{}{
+\begin{itemize}
+    \item Developed a REST API service for form analysis with OAuth2 / JWT authentication.
+    \item Implemented authorization strategies and complete technical documentation.
+\end{itemize}}
+
+\cventry{2014 -- 2015}{Economist}{Ministry of Planning and External Cooperation}{}{}{
+\begin{itemize}
+    \item Monitored macroeconomic indicators, contributed to public policy reports, and collaborated with modeling teams for socio-economic simulations.
+\end{itemize}}
+
+\section{Education}
+\cvitem{2010--2014}{Advanced Studies Diploma in Applied Economics, C.T.P.E.A}
+\cvitem{2009--2010}{High School Diploma (Philosophy, Honors), Institution Saint-Louis de Gonzague}
+\cvitem{Self-learning}{FlatIronSchool, CodeWithMosh, Udemy}
+
+\section{Technical Skills}
+\cvitem{Languages \& Frameworks}{Python, FastAPI, SQLModel, SQLAlchemy, Pydantic, Pandas, Numpy, Plotly, Docker, Git, React, React Native}
+\cvitem{Databases}{MySQL, PostgreSQL, SQL Server, MongoDB (Beanie, Pymongo), BigQuery}
+\cvitem{Tools \& Automation}{Commcare, Streamlit, Power BI, Looker Studio, RMarkdown, Quarto, Apache Beam, AWS, Google Cloud, VS Code}
+\cvitem{Methodologies}{CI/CD, API Documentation, Unit Testing, Monitoring \& Metrics, Data Integration (ETL)}
+\cvitem{Languages}{French (fluent), English (fluent), Creole (native)}
+
+\section{Distinctive Strengths}
+\cvitem{}{Strong ability to quickly understand business processes and translate them into technical solutions.}
+\cvitem{}{Commitment to code quality, security, and performance. Team spirit, rigor, and continuous curiosity for technology (AI, automation, Power Platform).}
+
 \end{document}
