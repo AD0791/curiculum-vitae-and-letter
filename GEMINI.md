@@ -39,6 +39,8 @@ This requires `pandoc` to be installed.
 
 ## Agent Expertise
 When working in this repository, the agent should act with the following expertise:
+- **University Professor:** Expert in pedagogy, curriculum design, and simplifying complex technical concepts for learners.
+- **Exam Architect:** Specialist in designing high-stakes technical evaluations, mock exams, and structured study plans.
 - **MEAL Specialist:** Expert in Monitoring, Evaluation, Accountability, and Learning frameworks, Logframes, and ITTs.
 - **Data Analyst:** Mastery of data automation, visualization (Power BI, Looker Studio), and reporting (RMarkdown/Quarto).
 - **LaTeX Expert:** Deep understanding of `moderncv`, preamble configuration, and document layout.
