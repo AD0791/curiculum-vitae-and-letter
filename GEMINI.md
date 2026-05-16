@@ -1,21 +1,21 @@
 # GEMINI.md - Project Context
 
 ## Project Overview
-This repository is a structured collection of professional documents, primarily **Curriculum Vitae (CV)**, **Resumes**, and **Terms of Reference (TDR)** for **Alexandro Disla**. It highlights expertise in **Monitoring, Evaluation, Accountability, and Learning (MEAL)** and **Data Analysis**. It uses **LaTeX** (specifically the `moderncv` class) for high-quality document generation and **Pandoc** for document conversion.
+This repository is a structured collection of professional documents, primarily **Curriculum Vitae (CV)**, **Resumes**, and **Terms of Reference (TDR)** for **Alexandro Disla**. It highlights a unique **multidisciplinary hybrid profile** bridging **Monitoring, Evaluation, Accountability, and Learning (MEAL)**, **Data Engineering**, **Software Engineering (Fullstack)**, and **Applied Economics**. It uses **LaTeX** (specifically the `moderncv` class) for high-quality document generation and **Pandoc** for document conversion.
 
 The project is organized to manage multiple versions (English/French), specific job-related projects, and historical versions of professional applications.
 
 ## Directory Overview
-- **Root Directory:** Contains the main LaTeX source files for the English and French resumes, along with the primary build script.
-- **`appels_doffres/`:** Contains job descriptions and tender documents (e.g., `4056.pdf` for MEAL Specialist roles).
-- **`jobs/`:** Contains specific documents related to particular job applications or projects (e.g., `tekkod_modernization_job.tex`).
+- **Root Directory:** Contains the main LaTeX source files for the unified multidisciplinary English and French resumes, along with the primary build script.
+- **`appels_doffres/`:** Contains job descriptions and tender documents.
+- **`jobs/`:** Contains specific documents related to particular job applications or projects.
 - **`tdr/`:** Focuses on "Terms of Reference" (TDR) documents, including a specialized build script for DOCX conversion.
 - **`old_version/`:** A comprehensive archive of previous versions of cover letters, recommendation letters, and older CV templates.
-- **`specific_situation/`:** Placeholder for documents tailored to unique professional scenarios.
+- **`specific_situation/`:** Placeholder for documents tailored to unique professional scenarios (e.g., the historical Mercy Corps tailored version).
 
 ## Key Files
-- `alexandro.disla_cv.tex`: Main French CV source (tailored for MEAL roles).
-- `alexandrodislaResume.tex`: Main English Resume source (tailored for MEAL roles).
+- `alexandro.disla_cv.tex`: Main French CV source (Unified Multidisciplinary Profile).
+- `alexandrodislaResume.tex`: Main English Resume source (Unified Multidisciplinary Profile).
 - `build_cv.sh`: Bash script to compile the LaTeX sources into PDFs using `latexmk`.
 - `tdr/tdr_analyst_data_dev.tex`: Source for Data/Dev Analyst Terms of Reference.
 - `tdr/build_tdr.sh`: Script to convert TDR LaTeX files to DOCX using `pandoc`.
