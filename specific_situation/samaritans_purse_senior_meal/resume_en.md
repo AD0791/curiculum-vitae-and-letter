@@ -67,11 +67,13 @@ Haitian Creole.
     processing time by 40%; maintained program dashboards on AWS (Quarto) and Power BI for weekly
     indicator monitoring by program management.
 
-### Economist — Economic Planning Service | Ministry of Planning (MPCE)
-*2014 – 2015 | Haiti*
+### Economist — Economic Planning Service (DPES) | Ministry of Planning and External Cooperation (MPCE)
+*Nov 2015 – Aug 2023 | Port-au-Prince*
 
-*   Monitored macroeconomic indicators and contributed statistical analysis to public policy
-    reports; collaborated with the modeling team on socio-economic impact simulations.
+*   Contributed to the monitoring reports on the execution of the 2014–2016 Triennial Investment
+    Plan; assigned to the statistics and modeling unit, where I helped build the "Development
+    Planning Model", a forecasting, simulation and public-policy impact-analysis tool; monitored
+    macroeconomic indicators alongside the Ministry of Economy and Finance.
 
 ## Data Engineering & Systems Experience
 

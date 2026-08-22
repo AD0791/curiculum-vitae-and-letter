@@ -72,12 +72,14 @@ Port-au-Prince ; français, anglais et créole haïtien courants.
     réduisant le temps de traitement manuel de 40 % ; maintenance des tableaux de bord programme
     sur AWS (Quarto) et Power BI pour le suivi hebdomadaire des indicateurs.
 
-### Économiste — Service de Planification Économique | Ministère de la Planification (MPCE)
-*2014 – 2015 | Haïti*
+### Économiste — Direction de Planification Économique et Sociale (DPES) | Ministère de la Planification et de la Coopération Externe (MPCE)
+*Nov 2015 – Août 2023 | Port-au-Prince*
 
-*   Suivi des indicateurs macroéconomiques et contribution en analyse statistique aux rapports de
-    politiques publiques ; collaboration avec l'équipe de modélisation sur les simulations
-    d'impact socio-économique.
+*   Contribution aux rapports de suivi de l'exécution du Plan Triennal d'Investissement 2014–2016 ;
+    affectation à l'unité statistique et modélisation, avec participation à la construction du
+    « Modèle de Planification du Développement », outil de prévision, de simulation et d'analyse
+    d'impact des politiques publiques ; suivi des indicateurs macroéconomiques avec le Ministère de
+    l'Économie et des Finances.
 
 ## Expériences en Ingénierie de Données et Systèmes
 
