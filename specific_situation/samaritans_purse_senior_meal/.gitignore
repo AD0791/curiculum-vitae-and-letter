@@ -1,0 +1,3 @@
+# Identity documents and diplomas must never be committed.
+credentials/*
+!credentials/README.md

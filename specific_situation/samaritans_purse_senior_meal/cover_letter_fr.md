@@ -1,0 +1,72 @@
+# Lettre de Motivation
+
+**Alexandro Disla**
+Rue Saint-Louis Jeanty #14, Route de Frère, Port-au-Prince, Haïti
+(+509) 4148-3700 | alexandrodisla@hotmail.com
+GitHub: [https://github.com/AD0791](https://github.com/AD0791)
+
+---
+
+**À l'attention de :** Équipe de Recrutement de Samaritan's Purse Haïti
+**Lieu :** Bureau Pays d'Haïti, Port-au-Prince
+**Objet :** Candidature au poste de Senior MEAL Officer
+
+Madame, Monsieur,
+
+C'est avec un vif intérêt que je vous adresse ma candidature au poste de Senior MEAL Officer au
+sein du bureau pays de Samaritan's Purse en Haïti. J'apporte plus de cinq ans d'expérience MEAL
+sur trois secteurs dans ce pays — la santé à la Caris Foundation International, l'eau et
+l'assainissement chez HANWASH, l'éducation chez Anseye Pou Ayiti — doublés de la capacité
+d'ingénierie qui permet de construire et de sécuriser les systèmes de données sur lesquels ces
+programmes reposent. Je réside à Port-au-Prince, je travaille quotidiennement en français, en
+anglais et en créole haïtien, et je suis disponible pour les déplacements de terrain et les
+visites de vérification.
+
+Le cœur de ce poste, tel que je le lis, consiste à garantir que les données rapportées par un
+bureau pays résistent à la vérification lorsqu'on les remonte jusqu'à leur source. C'est
+précisément le travail que j'ai fait. Chez HANWASH, j'ai raffiné les plans MEAL et les tableaux de
+suivi des indicateurs alignés sur les normes JMP pour des programmes d'eau et d'assainissement. À
+la Caris Foundation, j'ai établi et supervisé les protocoles d'assurance qualité des données (DQA)
+sur des données intégrées MySQL, en remontant les chiffres rapportés jusqu'aux registres sources
+et en suivant les actions correctives jusqu'à leur clôture, et non jusqu'à leur simple
+consignation. Vérifier à la source et refermer la boucle : c'est la discipline que j'apporterais
+au cadre MEAL du bureau pays et aux visites de vérification terrain.
+
+J'aborde la protection des données comme un problème d'ingénierie plutôt que comme un document de
+politique. Sur CommCare, mWater, ODK et KoboToolbox, j'ai conçu des instruments de collecte avec
+logiques de saut et contraintes de validation afin que les erreurs soient arrêtées à la saisie, et
+j'ai administré les bases qui les sous-tendent : contrôle d'accès par rôle, stockage cloud
+sécurisé sur Azure et AWS, dédoublonnage systématique des listes de bénéficiaires. La
+confidentialité et la durée de conservation se décident dans le schéma et dans les permissions ;
+je suis à l'aise pour les décider et les documenter.
+
+En matière de reporting et d'appui à la décision, j'ai construit et maintenu des tableaux de bord
+programme sous Power BI, Quarto et mWater pour un suivi hebdomadaire des indicateurs, et automatisé
+le reporting d'activité en Python et SQL à la Caris Foundation, réduisant le temps de traitement
+manuel de 40 %. Économiste appliqué de formation, je sais mener une analyse de l'échantillonnage
+jusqu'à la tendance, et — ce qui compte tout autant — énoncer clairement à un chef de programme ou
+à un Deputy Country Director ce que cette tendance signifie, ce qui y demeure incertain et quelle
+décision elle appelle.
+
+J'ai supervisé des agents de collecte sur des programmes multi-sites, assuré l'encadrement
+technique de personnel de suivi-évaluation, formé des équipes de terrain aux outils numériques et
+aux tableaux de bord, et coordonné avec des partenaires gouvernementaux dont la DINEPA et le MSPP.
+Sur la redevabilité envers les populations affectées, je souhaiterais construire le mécanisme de
+retour et de plainte comme tout autre système de données : un canal que les personnes peuvent
+réellement atteindre, un enregistrement confidentiel, des voies de référencement définies à
+l'avance et un suivi jusqu'à la clôture — afin que ce que les communautés nous disent modifie le
+programme, au lieu de finir dans un classeur.
+
+Ce poste m'attire parce que Samaritan's Purse sert les communautés haïtiennes sans interruption
+depuis 2010, et parce qu'il traite les données probantes et la redevabilité comme des obligations
+envers les personnes servies plutôt que comme une charge de reporting. Je respecte la mission et
+les valeurs chrétiennes de l'organisation ainsi que son engagement auprès des populations
+affectées par les crises, et je serais heureux de contribuer à un bureau pays où cet engagement
+façonne la manière dont le travail est mené. Je reste à votre entière disposition pour un
+entretien.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Alexandro Disla
+
+*Ci-joint : Curriculum Vitae*
