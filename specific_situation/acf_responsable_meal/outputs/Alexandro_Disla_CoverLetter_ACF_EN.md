@@ -1,0 +1,63 @@
+# Cover Letter
+
+**Alexandro Disla**
+Rue Saint-Louis Jeanty #14, Route de Frère, Port-au-Prince, Haiti
+(+509) 4148-3700 | alexandrodisla@hotmail.com
+GitHub: [https://github.com/AD0791](https://github.com/AD0791)
+
+---
+
+**To:** Recruitment Team — Action Against Hunger Haiti
+**Location:** Country Office, Port-au-Prince
+**Subject:** Application for MEAL Department Head ("Responsable département MEAL")
+
+Dear Hiring Team,
+
+I am writing to apply for the position of **MEAL Department Head** at the Action Against Hunger
+country office in Haiti. I bring more than ten years across monitoring, evaluation and
+information systems: five years of NGO MEAL work in three Haitian sectors — health and HIV at
+Caris Foundation International, water and sanitation at HANWASH, education at Anseye Pou Ayiti —
+preceded by eight years monitoring the execution of the national Three-Year Investment Plan and
+building statistical models at the Ministry of Planning. I live in Port-au-Prince, work daily in
+French, English and Haitian Creole, and am available for field travel.
+
+As I read it, this post is first about holding together MEAL practices scattered across
+nutrition, health, WASH and food security, so that the figures a mission reports survive
+verification when they are traced back to their source. At Caris Foundation I standardised forms
+and data flows across sites on a multi-site health programme, established and supervised the
+data quality assurance protocols on the integrated MySQL databases, and followed corrective
+actions through to closure rather than to mere logging. At HANWASH I refined the MEAL plans and
+indicator tracking tables aligned to JMP standards. Harmonise the indicator definitions, then
+verify at the source: that is the discipline I would bring to the mission's MEAL framework.
+
+Maintaining an up-to-date database of the grant portfolio, the reporting tracker and a key-
+metrics summary sheet is, to my mind, as much an engineering task as a management one: I have
+designed and administered relational databases and ETL pipelines, built the weekly dashboards
+that plug into them, and automated a reporting process in Python and SQL that cut manual
+processing time by 40 %. I know the donor cycle from the inside: at Caris Foundation I produced
+and submitted the PEPFAR/MER indicators destined for USAID through DHIS2/DATIM, with the
+consistency checks and deadlines that this imposes. Promoting the APR tool across programme
+teams is the same exercise: a production cycle that holds, stable definitions, and analysis
+worth more than the sum of its cells.
+
+On gender equity, sex and age disaggregation is decided when the indicator is defined, not when
+the report is written — afterwards it cannot be recovered. And I would build the feedback and
+complaints mechanism as I would any other data system: a channel people can actually reach,
+confidential recording, referral pathways defined in advance, and follow-up to closure — so that
+what communities tell us changes the programme instead of ending up in a binder.
+
+Two points I would rather state plainly. My applied economics coursework at C.T.P.E.A is
+complete and the attestation is enclosed, but the Diplôme d'Études Supérieures still awaits the
+defence of my exit thesis: I therefore do not claim an awarded master's degree. And my ten years
+of monitoring and evaluation split into five NGO years and eight at the Ministry of Planning
+monitoring public indicators, rather than a strictly humanitarian career; that combination adds
+familiarity with national statistical systems, and the capacity to build the data systems
+myself. I have not personally led a SMART or IRNA survey, but I have the sampling training they
+require and the habit of coordinating multi-site field collection. I would welcome the
+opportunity to discuss this further.
+
+Sincerely,
+
+Alexandro Disla
+
+*Enclosed: Curriculum Vitae (French and English), academic attestation*

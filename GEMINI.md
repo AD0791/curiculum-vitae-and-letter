@@ -12,7 +12,7 @@ The project is organized to manage multiple versions (English/French), specific 
 - **`tdr/`:** Focuses on "Terms of Reference" (TDR) documents, including a specialized build script for DOCX conversion.
 - **`old_version/`:** A comprehensive archive of previous versions of cover letters, recommendation letters, and older CV templates.
 - **`specific_situation/`:** One self-contained directory per application, each with its own tailored CV, cover letter(s) and build script. See "Tailored application dossiers" below — this is where most active work happens.
-- **`attestation_diplomes/`:** The single central store of supporting documents (diplomas, work certificates, transcripts). Build scripts merge from here, so a credential is scanned once and reused by every application rather than copied per dossier.
+- **`attestation_diplomes/`:** The single central store of record for supporting documents (diplomas, work certificates, transcripts) — a credential is scanned once and lives here, never committed inside a dossier. Most build scripts stage what a given advert demands through the dossier's own gitignored `credentials/`; `mast_psara/` merges straight from this directory. See "Tailored application dossiers" for which does which.
 
 ## Key Files
 - `alexandro.disla_cv.tex`: Main French CV source (Unified Multidisciplinary Profile).
@@ -40,10 +40,14 @@ This requires `pandoc` to be installed.
 
 ## Tailored application dossiers (`specific_situation/`)
 
-Each application gets its own directory. The mature examples to copy are
-`mast_psara/`, `faes_ha_j0005/`, `cmmb_me_officer/` and `samaritans_purse_senior_meal/`; the
-older `mercy_corps/`, `iom_web_content_developer/` and `parole_et_action/` predate parts of the
-pattern. The shape is:
+Each application gets its own directory. **`acf_responsable_meal/` is the fullest example of the
+current pattern** — bilingual pair, `credentials/`, `inputs/`, `email_prep.md` and `emails.md` —
+and is the one to copy for a new dossier. `samaritans_purse_senior_meal/`, `cmmb_me_officer/` and
+`faes_ha_j0005/` share that shape; `mast_psara/` is mature but predates the local `credentials/`
+convention (see below) and remains the model for the *two posts, one CV* case. The older
+`mercy_corps/`, `acted_assistantDB/`, `iom_web_content_developer/` and `parole_et_action/` predate
+parts of the pattern, and `remoteleverage_data_analyst/` is a stub holding outputs only. The shape
+is:
 
 | File | Role |
 |---|---|
@@ -51,20 +55,42 @@ pattern. The shape is:
 | `cover_letter_*.tex` (+ `.md` twin) | One letter per post. A dossier covering two posts keeps one CV and two letters |
 | `build_<name>.sh` | `latexmk` → PDF, `pandoc` → DOCX, `sips` → image-to-PDF, `pdfunite` → merged dossier. Cleans its own LaTeX artefacts |
 | `outputs/` | Everything the script generates. Nothing here is hand-edited |
-| `email_prep.md` | The submission brief: deadline, address, what may and may not be claimed, and what still needs the user's decision |
-| `emails.md` | Copy-paste-ready email subject and body per post, plus a follow-up |
-| `inputs/` | The job advert as published, kept verbatim |
+| `email_prep.md` | The submission brief: deadline, address, the contents checklist, what may and may not be claimed, and what still needs the user's decision |
+| `emails.md` | Copy-paste-ready email subject and body per post, plus a follow-up. **Raw text only** — see the rule below. Newer dossiers split this out of `email_prep.md`; the older ones still keep drafts inline |
+| `inputs/` | The job advert as published, kept verbatim. Note in the header anything the published text omits |
+| `credentials/` | Gitignored staging area for scans the merged PDF needs. Holds only a committed `README.md` naming what to drop in and in what `01_`, `02_` order |
 
-Two rules the build scripts encode. **Supporting documents are never copied into a dossier** —
-they are read from `../../attestation_diplomes/` in filename order, so `01_`, `02_` prefixes
-control the order they appear in the merged PDF. And when an advert demands a single PDF, the
-script assembles it in the order the advert states (typically cover letter → CV → credentials)
-and prints a loud warning when the credentials folder is empty, rather than quietly producing an
-incomplete dossier.
+**No credential is ever committed inside a dossier.** `attestation_diplomes/` stays the single
+store of record: a diploma or work certificate is scanned once and lives there. Two build scripts
+implement that principle differently, and both are in use — read the script before assuming which:
+
+- **Gitignored local staging (`credentials/`)** — `acf_responsable_meal/`, `cmmb_me_officer/`,
+  `faes_ha_j0005/`, `samaritans_purse_senior_meal/`. The user copies the scans a given advert
+  demands into the dossier's own `credentials/`, which the parent `.gitignore` excludes except
+  for its `README.md`. This is the dominant pattern, because adverts ask for identity papers
+  (CIN, NIF, NUI) that have no business in `attestation_diplomes/` and differ per employer.
+- **Direct read from the central store** — `mast_psara/` alone, whose `CREDENTIALS_DIR` points
+  at `../../attestation_diplomes/`. Simpler, but only workable when the advert wants nothing
+  beyond the diplomas already on file.
+
+Either way the directory is read **sorted by filename**, so `01_`, `02_` prefixes control the
+order pages land in the merged PDF, and the script prints a loud warning when it finds the
+directory empty rather than quietly producing an incomplete dossier. When an advert demands a
+single PDF, the script assembles it in the order the advert states — letter → CV → credentials,
+with the advert's own language first when the dossier is bilingual.
 
 **A CV may never claim more than the credential attached beside it in the same PDF.** When the
 diploma travels with the CV, an overstated education line is contradicted two pages later by the
 applicant's own attachment.
+
+**An email draft is raw text the user pastes into a mail client, so it carries no Markdown.**
+Never wrap a draft in `>` blockquotes, and keep `**bold**`, `[link](url)` syntax and list bullets
+out of the body and the signature — every one of those characters pastes literally and has to be
+stripped by hand, which defeats the point of the file. Headings and `---` rules *between* drafts
+are fine; everything from the `Objet :` / `Subject:` line down to the last line of the signature
+must be exactly what gets sent, bare URLs included. Markdown linters will flag those bare URLs
+(`MD034`) — that warning is wrong here and stays unfixed. The rule applies to any message drafted
+for the user to send, not only to `emails.md`.
 
 ## Agent Expertise
 When working in this repository, the agent should act with the following expertise:

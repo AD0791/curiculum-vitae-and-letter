@@ -1,0 +1,41 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.82]{geometry}
+
+% moderncv compose \today en anglais par défaut ; on redéfinit le format en français
+% plutôt que de charger babel, qui modifierait la typographie de tout le document.
+\renewcommand{\today}{\number\day\space\ifcase\month\or janvier\or février\or mars\or avril\or
+mai\or juin\or juillet\or août\or septembre\or octobre\or novembre\or décembre\fi\space\number\year}
+
+\name{Alexandro}{Disla}
+\title{Lettre de Motivation}
+\address{Rue Saint-Louis Jeanty \#14, Route de Frère}{Port-au-Prince, Haïti}{}
+\phone[mobile]{(+509) 4148-3700}
+\email{alexandrodisla@hotmail.com}
+\extrainfo{GitHub: \url{https://github.com/AD0791}}
+
+\begin{document}
+
+\recipient{Équipe de Recrutement --- Action Contre la Faim Haïti}{Bureau Pays, Port-au-Prince\\Poste : Responsable département MEAL}
+\date{\today}
+\opening{Madame, Monsieur,}
+\closing{Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées,}
+\enclosure[Ci-joint]{Curriculum Vitae (français et anglais), attestation académique}
+
+\makelettertitle
+
+Je vous adresse ma candidature au poste de \textbf{Responsable département MEAL} du bureau pays d'Action Contre la Faim en Haïti. J'apporte plus de dix ans en suivi, évaluation et systèmes d'information : cinq ans de MEAL en ONG sur trois secteurs haïtiens --- la santé et le VIH à la Caris Foundation International, l'eau et l'assainissement chez HANWASH, l'éducation chez Anseye Pou Ayiti --- précédés de huit ans de suivi de l'exécution du Plan Triennal d'Investissement et de modélisation statistique au MPCE. Je réside à Port-au-Prince, je travaille en français, en anglais et en créole haïtien, et je suis disponible pour les déplacements terrain.
+
+Ce poste consiste d'abord, tel que je le lis, à faire tenir ensemble des pratiques MEAL dispersées entre la nutrition, la santé, le WASH et la SAME, pour que les chiffres remontés par la mission résistent à la vérification lorsqu'on les ramène à leur source. À la Caris Foundation, j'ai standardisé les formulaires et les flux de données entre sites sur un programme de santé multi-sites, établi et supervisé les protocoles d'assurance qualité des données sur les bases MySQL intégrées, et suivi les actions correctives jusqu'à leur clôture plutôt que jusqu'à leur consignation. Chez HANWASH, j'ai raffiné les plans MEAL et les tableaux de suivi des indicateurs alignés sur les normes JMP. Harmoniser les définitions, puis vérifier à la source : c'est la discipline que j'apporterais au cadre MEAL de la mission.
+
+La tenue d'une base à jour du portefeuille de subventions, du suivi des rapports et d'une feuille de résumé des paramètres clés relève, pour moi, de l'ingénierie autant que de la gestion : j'ai conçu et administré des bases relationnelles et des pipelines ETL, construit les tableaux de bord hebdomadaires qui s'y branchent, et automatisé en Python et SQL une production de rapports qui a réduit de 40 \% le temps de traitement manuel. Je connais le cycle bailleur de l'intérieur : à la Caris Foundation, je produisais et soumettais les indicateurs PEPFAR/MER destinés à l'USAID via DHIS2/DATIM, avec les contrôles de cohérence et les échéances que cela impose. La promotion de l'outil APR auprès des équipes de programme est le même exercice : un cycle de production tenu, des définitions stables, et une analyse qui vaut mieux que la somme de ses cellules.
+
+Sur l'équité entre les sexes, la désagrégation par sexe et par âge se décide au moment où l'indicateur est défini, pas au moment du rapport : plus tard, elle n'est plus récupérable. Et je souhaiterais construire le mécanisme de rétroaction et de plaintes comme tout autre système de données --- un canal que les personnes peuvent réellement atteindre, un enregistrement confidentiel, des voies de référencement définies à l'avance et un suivi jusqu'à clôture --- afin que ce que disent les communautés modifie le programme, au lieu de finir dans un classeur.
+
+Deux points que je préfère poser franchement. Ma scolarité au C.T.P.E.A est complétée et l'attestation est jointe, mais le Diplôme d'Études Supérieures reste en attente de la soutenance de mon mémoire de sortie : je ne revendique donc pas un master délivré. Et mes dix ans de suivi-évaluation se répartissent en cinq ans d'ONG et huit ans au ministère du Plan sur le suivi d'indicateurs publics, plutôt qu'en une carrière strictement humanitaire ; cette combinaison ajoute au MEAL la familiarité des systèmes statistiques nationaux et la capacité de construire moi-même les systèmes de données. Je n'ai pas personnellement dirigé d'enquête SMART ou IRNA, mais j'en ai la formation d'échantillonnage et l'habitude de coordonner des collectes multi-sites. Je reste à votre disposition pour un entretien.
+
+\makeletterclosing
+
+\end{document}
