@@ -49,10 +49,14 @@ secondary) and describe the N+1 separately as your own debugging. This client wi
 in an interview, and it is the single answer they said most applicants get wrong, so it has to be
 literally true.
 
-**2. The $9/hour rate (question 5).** Their band is $1,000–$1,500 per month for ~40 hours, which is
-roughly $6–9 per hour. I put you at $9 — the top of their own band — because underbidding a posted
-range buys nothing and signals less. Change it if you want a different number; it appears in
-`screening_answers.md` Q5 and in `proposal.md` Block B item 5, so change both.
+**2. The $10/hour rate (question 5)** — you set this, raising my $9. Their band is $1,000–$1,500 per
+month for ~40 hours, which works out at roughly $5.80–$8.70 per hour, so **$10 sits just above their
+posted maximum**, not inside it. Both files now say so plainly and offer to work to the monthly
+figure if it is firm, rather than claiming to be inside a range you are outside of — a client who
+posted a band can do that arithmetic.
+
+If you change it again, it appears in `screening_answers.md` Q5 and in `proposal.md` Block B item 5.
+Change both: they drifted apart last time.
 
 Worth seeing clearly: **$1,000–1,500/month for 40 h/week is well below what your data and backend
 work commands**, including on this platform. That is your call and not mine to make, but do not

@@ -113,8 +113,9 @@ me to it. Fibre with backup power and a second mobile connection, so being unrea
 thing that happens.
 
 5. Test project and rate. Yes, and it is the reason I am applying despite the platform gap — it is a
-better filter than anything I can claim here. I can start this week. For ongoing work my rate is $9
-an hour, which sits inside the band you posted at 40 hours a week.
+better filter than anything I can claim here. I can start this week. For ongoing work my rate is $10
+an hour; at 40 hours a week that runs a little above the monthly band you posted, so if that figure
+is firm, say so and I will work to it rather than haggle.
 
 Alexandro Disla
 

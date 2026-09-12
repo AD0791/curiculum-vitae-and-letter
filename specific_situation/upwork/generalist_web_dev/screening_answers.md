@@ -129,8 +129,9 @@ your five platforms, so anything I claim in a proposal is worth less than what I
 hours. Two design directions, then the build on the one you pick, both as fixed-price milestones —
 that works, and I can start this week.
 
-For ongoing work my rate is $10 an hour, which sits inside the band you posted at 40 hours a week. I
-would take the reduced rate for the two-week trial period as described.
+For ongoing work my rate is $10 an hour. At 40 hours a week that runs a little above the monthly
+band you posted, so if that figure is firm, say so and I will work to it rather than haggle. I would
+take the reduced rate for the two-week trial period as described.
 
 One thing I would ask in return on the test: tell me which platform the brief is on and give me
 access early. If it is WordPress I will be productive immediately; if it is Shopify I will be

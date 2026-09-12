@@ -53,3 +53,13 @@ Decide per advert. The default is no attachment.
 |---|---|---|
 | `revenue_cycle_analyst/` | Financial & Revenue Cycle Analyst — U.S. psychiatric practice | Built 2026-09-11. Degree requirement stated as absolute and unmet; gap disclosed in writing |
 | `generalist_web_dev/` | Generalist web developer — international web agency | Built 2026-09-12. **Zero of the five required platforms.** See its `application_prep.md` before sending |
+| `adomik_ai_agent_engineer/` | AI Agent Engineer (Python, Data, MCP) — Adomik, Paris | Built 2026-09-12. Best *technical* fit in the repo; **ruled out by an explicit location rule** (UTC-5 against a UTC-1…UTC+3 requirement), which is the only hard blocker left. Read its `application_prep.md` first |
+
+### Where the seven-or-five questions go
+
+Two of these three dossiers carry a `screening_answers.md` and one does not, and the difference is
+the advert's own wording. `generalist_web_dev/` has one because Upwork renders that client's five
+questions as separate fields. `adomik_ai_agent_engineer/` has none because that advert says *"Please
+include in your proposal"* and then lists seven items — they belong in the proposal body. Read the
+advert before deciding which shape applies; guessing wrong means answering in a box the client never
+opens.
