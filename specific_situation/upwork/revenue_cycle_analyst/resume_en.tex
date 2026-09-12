@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage{helvet}
+
+\name{Alexandro}{Disla}
+\title{Financial \& Revenue Cycle Analyst}
+% Upwork rejects proposals and attachments containing a phone number, an email address
+% or an outside link. Header deliberately carries none of the three.
+\address{Port-au-Prince, Haiti}{Remote --- UTC-5, aligned with U.S. Eastern}{}
+\extrainfo{Contact through Upwork}
+
+\begin{document}
+\makecvtitle
+
+\section{Professional Profile}
+\cvitem{}{Applied economist and data analyst whose work has consistently been the question this role is built around: when two systems disagree about a number, which one is wrong, and why. Eight years at Haiti's Ministry of Planning on execution monitoring of the national Three-Year Investment Plan and in its statistics and modelling unit, contributing to a forecasting, simulation and policy impact model. Five years building the reporting systems of internationally funded programmes --- the databases, the SQL and Python that feed them, the data quality protocols that decide whether a reported figure survives being traced back to its source, and the dashboards management reads. I have no medical billing background, and I am applying because the advert describes reconciliation, discrepancy investigation and payer-level analysis as the substance of the work.}
+
+\section{Core Competencies}
+\cvitem{}{
+\begin{itemize}
+    \item \textbf{Discrepancy investigation \& reconciliation:} Tracing a reported figure back through an integrated database to the source record it came from; establishing which of several disagreeing systems is authoritative; deduplication and defensible counts; corrective action followed to closure rather than logged.
+    \item \textbf{Quantitative \& financial analysis:} Execution and variance analysis on a national public investment portfolio; ratio and trend analysis; statistical modelling, forecasting and simulation; sampling and scenario work. Trained as an applied economist, which shows up as discipline about metric definitions and denominators.
+    \item \textbf{Excel:} Pivot-driven reconciliation workbooks, \textbf{XLOOKUP/INDEX-MATCH}, conditional aggregation (SUMIFS/COUNTIFS), data validation, Power Query for repeatable imports, scenario tables.
+    \item \textbf{SQL, Python \& BI:} Advanced SQL across PostgreSQL, MySQL, BigQuery and SQL Server --- joins, window functions, query optimisation; Python (Pandas) for recurring analysis; \textbf{Power BI (expert)} and Looker Studio.
+    \item \textbf{Learning unfamiliar systems:} A career spent being dropped into someone else's domain --- public investment planning, HIV programme reporting, water and sanitation, education --- and being productive in it because the underlying discipline travels.
+\end{itemize}}
+
+\section{Quantitative and Financial Analysis Experience}
+
+\cventry{Nov 2015 -- Aug 2023}{Economist --- Economic and Social Planning Directorate (DPES)}{Ministry of Planning and External Cooperation (MPCE)}{Port-au-Prince}{}{
+\begin{itemize}
+    \item Contributed to the execution monitoring reports of the 2014--2016 Three-Year Investment Plan: what had been programmed against what was actually executed, project by project, across every sector and geographic department of the national public investment portfolio.
+    \item Assigned to the statistics and modelling unit and contributed to building the ``Development Planning Model'' --- a forecasting, simulation and public policy impact analysis tool.
+    \item Took part in macroeconomic framing meetings with the Ministry of Economy and Finance, and monitored national macroeconomic indicators.
+\end{itemize}}
+
+\cventry{Oct 2021 -- Aug 2024}{Monitoring \& Evaluation Officer}{Impact Youth Project, Caris Foundation International}{Haiti}{}{
+\begin{itemize}
+    \item \textbf{Reconciliation and data quality:} Established and supervised the data quality assurance protocols on the programme's integrated MySQL data --- tracing each reported figure back to the source register it was meant to come from, deduplicating beneficiary records across sites, and following corrective actions to closure.
+    \item \textbf{External reporting under audit conditions:} Produced and submitted the PEPFAR/MER indicators destined for USAID through the DHIS2/DATIM platforms, with the consistency checks and fixed reporting cycle a federal funder imposes \textit{(as a data producer; I did not administer those platforms)}.
+    \item \textbf{Systems:} Established digital collection across a multi-site health programme (CommCare, HIVHaiti), standardising forms and data flows so errors were caught at entry rather than repaired downstream.
+    \item \textbf{Automation:} Built the recurring reporting in Python and SQL, cutting manual production time by 40 \% and removing a standing source of transcription error; maintained weekly indicator dashboards in Power BI and Quarto on AWS.
+\end{itemize}}
+
+\cventry{Oct 2023 -- Jan 2026}{Data Analyst Consultant}{HANWASH}{Remote (Upwork)}{}{
+\begin{itemize}
+    \item Owned the indicator definitions and tracking tables for a multi-site programme reporting to international funders --- one agreed definition per metric, so the same figure meant the same thing in every report.
+    \item Administered the central operational database, running regular deduplication and record merges to hold a single source of truth; resolved field collection incidents to preserve the integrity of the series.
+    \item Built automated Power BI and mWater dashboards fed by API-connected pipelines, and wrote the technical guides that let the teams run them without me.
+\end{itemize}}
+
+\cventry{Jan 2026 -- Mar 2026}{Data Analyst \& M\&E Consultant}{Anseye Pou Ayiti}{Remote}{}{
+\begin{itemize}
+    \item Defined the KPI layer for multi-programme reporting and implemented the performance indicators end to end, from definition through to the report that went back to management.
+    \item Built collection instruments with embedded validation and skip logic, cutting downstream correction work; maintained the Python integration jobs on AWS that consolidated the central dataset.
+\end{itemize}}
+
+\section{Data Engineering and Systems Experience}
+
+\cventry{Feb 2026 -- Present}{Software Engineer (Fullstack)}{Tekkod LLC}{Remote (U.S.)}{}{Diagnosed and removed an N+1 query pattern in a production application, taking page load from roughly 36 seconds to under half a second --- found in the query logs, resolved with one aggregated join plus eager loading. Designed composite indexes that eliminated lock contention under concurrent write load, and built Looker Studio dashboards with multi-level search and filtering for operational visibility.}
+
+\cventry{Mar 2021 -- May 2024}{Backend Developer \& Data Engineer}{Tekkod LLC}{Remote (U.S.)}{}{Built ETL pipelines in Apache Beam migrating MongoDB collections into BigQuery, made idempotent so that reruns did not duplicate data; administered relational databases under concurrent access and delivered secured REST services (FastAPI, JWT) with role-based access control and full OpenAPI documentation.}
+
+\cventry{Nov 2015 -- Mar 2021}{Software Consultant \& Data Integration Specialist}{CassionSoft (UNOPS Project)}{Haiti}{}{Designed relational schemas and data integration logic on a project under United Nations contract, validated through automated unit testing; implemented RBAC authentication (OAuth2/JWT) and documented REST APIs.}
+
+\cvitem{}{\textit{Several engagements above overlap: consulting contracts run alongside a primary role, which is standard practice in the Haitian market.}}
+
+\section{Education}
+\cvitem{2010--2014}{Applied Economics --- C.T.P.E.A (Centre de Techniques de Planification et d'Économie Appliquée), Port-au-Prince. Four-year higher-education programme in economic planning, statistics and econometrics. \textit{Coursework completed; the Diplôme d'Études Supérieures is conferred after the defence of the exit thesis, which I have not yet defended. Official attestation available on request.}}
+\cvitem{2009--2010}{Baccalaureate, with distinction --- Institution Saint-Louis de Gonzague, Port-au-Prince}
+\cvitem{Continuing}{Flatiron School (Software Engineering), CodeWithMosh, Udemy}
+
+\section{Technical Skills}
+\cvitem{Excel}{Pivot tables, XLOOKUP / INDEX-MATCH, SUMIFS \& COUNTIFS, data validation, Power Query, scenario tables, reconciliation workbooks}
+\cvitem{Quantitative}{Statistical modelling, forecasting and simulation, variance and ratio analysis, trend analysis, sampling, cohort analysis}
+\cvitem{SQL \& Data}{PostgreSQL, MySQL, BigQuery, SQL Server, MongoDB --- window functions, query optimisation, indexing, execution plans}
+\cvitem{Python \& BI}{Python (Pandas, FastAPI), \textbf{Power BI (expert)}, Looker Studio, Quarto/RMarkdown, Plotly, Streamlit; Tableau \textit{(portfolio in progress on Tableau Public)}}
+\cvitem{Cloud}{Google Cloud (BigQuery, Dataflow), AWS, Azure, Docker, Git/GitHub, CI/CD}
+\cvitem{Languages}{\textbf{English (fluent)}, \textbf{French (native)}, \textbf{Haitian Creole (native)}}
+
+\section{Availability}
+\cvitem{}{Remote from Port-au-Prince (UTC-5, aligned with U.S. Eastern), overlapping the full U.S. working day; fibre connection with backup power and a secondary mobile line. Every role since 2021 has been remote for U.S.\ employers and clients. I hold no professional accounting or actuarial qualification and have no prior medical billing experience --- stated plainly, since the advert offers to train the second.}
+
+\end{document}
