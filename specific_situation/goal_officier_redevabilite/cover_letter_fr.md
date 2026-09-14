@@ -1,0 +1,60 @@
+# Lettre de Motivation
+
+**Alexandro Disla**
+Rue Saint-Louis Jeanty #14, Route de Frère, Port-au-Prince, Haïti
+(+509) 4148-3700 | alexandrodisla@hotmail.com
+GitHub: [https://github.com/AD0791](https://github.com/AD0791)
+
+**Ressources Humaines — GOAL Haïti**
+Pétion-Ville, Haïti
+Référence : Officier(ère) de redevabilité
+
+Madame, Monsieur,
+
+Je vous adresse ma candidature au poste d'Officier de Redevabilité de GOAL Haïti. J'apporte cinq
+ans de suivi-évaluation en ONG en Haïti — la santé et le VIH à la Caris Foundation International,
+l'eau et l'assainissement chez HANWASH, l'éducation chez Anseye Pou Ayiti — précédés de huit ans
+de suivi d'indicateurs publics au Ministère de la Planification. Le créole haïtien et le français
+sont mes langues maternelles et je rédige aussi en anglais. Je réside à Route de Frère, à
+proximité de Pétion-Ville, et je suis disponible pour les visites de terrain comme pour le samedi.
+
+Un mécanisme de retour d'information et de plaintes repose sur une promesse faite à chaque personne
+qui l'utilise : ce qu'elle a dit sera enregistré, transmis à qui peut agir, et lui reviendra sous
+forme de réponse. Tenir cette promesse exige une discipline que je pratique depuis cinq ans : une
+information juste dès la saisie, un suivi qui ne s'arrête qu'à la clôture, et des chiffres qui
+résistent à la vérification. À la Caris Foundation, j'ai établi et supervisé les protocoles
+d'assurance qualité des données d'un programme multi-sites, en remontant les chiffres jusqu'aux
+registres sources et en suivant chaque action corrective jusqu'à sa clôture plutôt que jusqu'à sa
+simple consignation. Les indicateurs que vous fixez au poste — 90 % des retours enregistrés sous
+48 heures, 80 % des dossiers clôturés dans les délais — sont de ceux que je sais mesurer
+honnêtement et faire vivre dans un tableau de bord.
+
+Le volet données et rapportage correspond à mon métier. J'ai administré des bases relationnelles,
+dédoublonné des registres de bénéficiaires, construit des tableaux de bord Power BI de suivi
+hebdomadaire et automatisé en Python et SQL la production de rapports d'activité, ce qui a réduit
+de 40 % le temps de traitement manuel ; j'ai aussi produit et soumis des indicateurs destinés à
+l'USAID, avec les échéances et les contrôles de cohérence qu'impose un bailleur. Une analyse
+mensuelle des tendances n'a de valeur que si les catégories restent stables d'un mois à l'autre :
+c'est là que je serai le plus utile à l'équipe SERA. Quant à la confidentialité, j'ai travaillé
+trois ans sur les données d'un programme VIH, où une information mal gardée expose directement une
+personne. J'en retiens qu'une plainte sensible ne s'instruit pas au guichet : elle se réfère, avec
+discrétion, selon le protocole de sauvegarde.
+
+Je préfère poser franchement l'écart principal. Je n'ai pas encore géré en titre un mécanisme de
+plaintes : mon expérience porte sur le suivi-évaluation et la gestion des données, pas sur la
+réception directe des plaintes. Ce qui s'y transfère est réel — la conduite d'agents de terrain
+sur plusieurs sites, la formation d'équipes, le suivi de dossiers jusqu'à clôture et la maîtrise du
+système qui porte tout le reste. Ce qui s'apprend, les procédures CFM de GOAL et les normes AAP, je
+l'apprendrai comme j'ai appris tour à tour la santé, l'eau et l'éducation. De même, ma scolarité en
+économie appliquée au C.T.P.E.A est complétée et attestée par la pièce jointe, mais le diplôme
+reste en attente de la soutenance de mon mémoire de sortie.
+
+L'approche de GOAL, fondée sur la participation communautaire, rejoint ce que je crois de la
+redevabilité : ce que disent les communautés doit modifier le programme, et non finir dans un
+classeur. Disponible dès octobre 2026, je reste à votre entière disposition pour un entretien.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées,
+
+**Alexandro Disla**
+
+*Ci-joint : Curriculum Vitae, trois références professionnelles, attestation d'études*
