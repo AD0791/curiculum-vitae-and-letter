@@ -1,0 +1,62 @@
+# Alexandro Disla
+
+Rue Saint-Louis Jeanty #14, Route de Frère, Port-au-Prince, Haïti
+(+509) 4148-3700 | alexandrodisla@hotmail.com
+GitHub: [https://github.com/AD0791](https://github.com/AD0791)
+
+---
+
+**Équipe de Recrutement — Catholic Relief Services Haïti**
+Port-au-Prince, Haïti
+Poste : Project Officer MEAL — Projet RAPID
+
+**Objet : Lettre de motivation**
+
+Madame, Monsieur,
+
+Je vous adresse ma candidature au poste de Project Officer MEAL du projet RAPID. Par souci de
+transparence : j'ai également adressé ma candidature au poste de Senior Project Officer MEAL du même
+projet. Les deux m'intéressent réellement, et je serais heureux de contribuer à RAPID à l'un ou
+l'autre niveau.
+
+Ce poste décrit mon travail quotidien depuis cinq ans. À la Caris Foundation International, j'ai
+conduit le suivi d'un projet de santé et de VIH sur des cliniques multi-sites : conception et
+standardisation des formulaires, encadrement technique des agents de collecte sur l'ensemble des
+sites, vérification des données remontées, calcul des indicateurs et soumission du rapportage. J'ai
+construit les instruments de collecte sur CommCare, KoboToolbox, ODK et mWater — avec logiques de
+saut et contraintes de validation, pour que l'erreur soit arrêtée à la saisie plutôt que corrigée
+trois semaines plus tard — et j'ai formé les agents de collecte et les équipes partenaires à leur
+usage, guides techniques à l'appui, de manière qu'elles continuent sans moi. Sur la qualité des données, j'ai
+établi et supervisé des protocoles de DQA en remontant les chiffres rapportés jusqu'aux registres
+sources, et en suivant les actions correctives jusqu'à leur clôture. Enfin, je produisais et
+soumettais les indicateurs MER destinés à l'USAID via DATIM : le rythme, les contrôles de cohérence
+et les échéances d'un bailleur du gouvernement américain me sont familiers, ce qui devrait servir un
+projet financé par le Département d'État.
+
+Vous verrez sur mon CV que mon expérience dépasse les deux ans demandés, et je préfère dire pourquoi
+je postule à ce poste plutôt que de laisser la question en suspens. J'exerce aussi comme ingénieur
+de données : j'administre les bases et je construis les tableaux de bord Power BI dont un système
+MEAL dépend, au lieu de seulement les spécifier. Ce que décrit votre fiche — vérification
+quotidienne de la qualité, nettoyage des bases, appui aux équipes sur les outils numériques — est
+précisément l'endroit où cette double compétence sert le plus, et c'est ce travail-là que je veux
+continuer à faire plutôt que de m'en éloigner.
+
+Deux réserves, que je préfère poser franchement. Ma pratique du suivi s'est faite en santé et VIH,
+en eau et assainissement et en éducation, dans des projets de développement plutôt qu'en réponse
+d'urgence : je n'ai pas conduit de PDM, de suivi de distributions ni de vérification
+post-enregistrement, exercices propres à l'assistance alimentaire, même si l'enquête,
+l'échantillonnage et la vérification qui les composent me sont familiers. De même, j'ai travaillé
+dans le respect des principes de redevabilité sans avoir moi-même opéré un mécanisme de gestion des
+plaintes ; c'est un volet que j'aborderais en apprenant vos procédures, pas en prétendant les
+connaître.
+
+Ce projet m'attire parce que son approche convergente — les mêmes ménages suivis à travers plusieurs
+services essentiels — pose exactement le problème de données que je sais traiter : identifier un
+ménage de façon fiable d'un secteur à l'autre, sans le compter deux fois ni le perdre en chemin. Je
+reste à votre entière disposition pour un entretien.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées,
+
+**Alexandro Disla**
+
+*Ci-joint : Curriculum Vitae détaillé, copies de diplômes*
