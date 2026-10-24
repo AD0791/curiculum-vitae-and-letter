@@ -1,0 +1,3 @@
+# Les pièces d'identité et les diplômes ne doivent jamais être committés.
+credentials/*
+!credentials/README.md

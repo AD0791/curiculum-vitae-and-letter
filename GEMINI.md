@@ -42,9 +42,13 @@ This requires `pandoc` to be installed.
 
 Each application gets its own directory. **`acf_responsable_meal/` is the fullest example of the
 current pattern** — bilingual pair, `credentials/`, `inputs/`, `email_prep.md` and `emails.md` —
-and is the one to copy for a new dossier. `samaritans_purse_senior_meal/`, `cmmb_me_officer/` and
-`faes_ha_j0005/` share that shape; `mast_psara/` is mature but predates the local `credentials/`
-convention (see below) and remains the model for the *two posts, one CV* case. The older
+and is the one to copy for a new dossier. `samaritans_purse_senior_meal/`, `cmmb_me_officer/`,
+`faes_ha_j0005/`, `goal_officier_redevabilite/`, `crs_spo_meal/`, `crs_po_meal/`,
+`acted_assistant_meal/` and `concern_gestion_information/` share that shape. The last two are the
+model for the commonest case, **one post, French only**: one `cv_fr`, one `cover_letter_fr`, one
+merged PDF. `panos_mel_acq/` has the shape without a `credentials/` directory; `mast_psara/` is
+mature but predates the local `credentials/` convention (see below) and remains the model for the
+*two posts, one CV* case. The older
 `mercy_corps/`, `acted_assistantDB/`, `iom_web_content_developer/` and `parole_et_action/` predate
 parts of the pattern, and `remoteleverage_data_analyst/` is a stub holding outputs only. The shape
 is:
@@ -64,11 +68,13 @@ is:
 store of record: a diploma or work certificate is scanned once and lives there. Two build scripts
 implement that principle differently, and both are in use — read the script before assuming which:
 
-- **Gitignored local staging (`credentials/`)** — `acf_responsable_meal/`, `cmmb_me_officer/`,
-  `faes_ha_j0005/`, `samaritans_purse_senior_meal/`. The user copies the scans a given advert
-  demands into the dossier's own `credentials/`, which the parent `.gitignore` excludes except
-  for its `README.md`. This is the dominant pattern, because adverts ask for identity papers
-  (CIN, NIF, NUI) that have no business in `attestation_diplomes/` and differ per employer.
+- **Gitignored local staging (`credentials/`)** — every dossier listed above as sharing the
+  shape, except `panos_mel_acq/`. The user copies the scans a given advert demands into the
+  dossier's own `credentials/`, which a `.gitignore` *inside that dossier* (`credentials/*`,
+  `!credentials/README.md`) excludes except for its `README.md`; the repository-level
+  `.gitignore` does not cover it, so a new dossier must copy that file too. This is the dominant
+  pattern, because adverts ask for identity papers (CIN, NIF, NUI) that have no business in
+  `attestation_diplomes/` and differ per employer.
 - **Direct read from the central store** — `mast_psara/` alone, whose `CREDENTIALS_DIR` points
   at `../../attestation_diplomes/`. Simpler, but only workable when the advert wants nothing
   beyond the diplomas already on file.
@@ -81,7 +87,10 @@ with the advert's own language first when the dossier is bilingual.
 
 **A CV may never claim more than the credential attached beside it in the same PDF.** When the
 diploma travels with the CV, an overstated education line is contradicted two pages later by the
-applicant's own attachment.
+applicant's own attachment. The converse holds too: when the CV or letter points to an attached
+credential, attach it even if the advert asks only for a CV and a letter.
+`concern_gestion_information/` does this with the C.T.P.E.A attestation, because the post
+requires a Bac+4 and the education line refers the reader to the attestation.
 
 **An email draft is raw text the user pastes into a mail client, so it carries no Markdown.**
 Never wrap a draft in `>` blockquotes, and keep `**bold**`, `[link](url)` syntax and list bullets
