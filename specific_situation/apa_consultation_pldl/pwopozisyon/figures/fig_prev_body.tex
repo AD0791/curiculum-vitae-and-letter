@@ -1,0 +1,15 @@
+% Figi prèv travay : de kapti rapò Looker Studio STS EvolveMe, bò kote youn lòt.
+% \prevA, \prevB : non fichye ; \lblA, \lblB : etikèt (defini nan fichye anvlòp la).
+\begin{tikzpicture}[x=1cm, y=1cm]
+  \node[card, inner sep=2.5pt] (a) at (4.15,0)
+    {\includegraphics[width=7.9cm]{\prevA}};
+  \node[card, inner sep=2.5pt] (b) at (12.85,0)
+    {\includegraphics[width=7.9cm]{\prevB}};
+  \node[pill, fill=apaink, text=white, anchor=south west] at ($(a.north west)+(0.05,0.1)$) {\lblA};
+  \node[pill, fill=apaink, text=white, anchor=south west] at ($(b.north west)+(0.05,0.1)$) {\lblB};
+  \node[anchor=north west, inner sep=0pt] (lk) at ($(a.south west)+(0,-0.18)$)
+    {\includegraphics[height=0.36cm]{looker_studio}};
+  \node[anchor=west] at ($(lk.east)+(0.08,0)$)
+    {\sub{Rapò trimestriyèl « EvolveMe » pou Steam The Streets, 7 paj ak filtè dat, peyi, rejyon, vil;
+      konstwi kòm enjenyè done nan Tekkod (2026).}};
+\end{tikzpicture}

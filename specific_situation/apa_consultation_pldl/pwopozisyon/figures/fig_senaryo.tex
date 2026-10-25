@@ -1,0 +1,55 @@
+% Figi C : ki senaryo pou ki plan CommCare, epi tou de rejwenn menm rès sistèm nan.
+\documentclass[tikz,border=4pt]{standalone}
+\input{fig_style}
+\newcommand{\chip}[2]{{\setlength{\fboxsep}{2pt}\colorbox{apaink!6}{%
+  \raisebox{-0.08cm}{#1}\hspace{3pt}\sub{#2}}}}
+\begin{document}
+\begin{tikzpicture}[x=1cm, y=1cm]
+  % --- Kesyon an
+  \node[card, inner xsep=9pt, inner ysep=6pt] (q) at (8.5,5.4)
+    {\raisebox{-0.12cm}{\includegraphics[height=0.46cm]{commcare_lockup}}\hspace{10pt}%
+     \lbl{\fontsize{9pt}{10pt}\selectfont Ki plan CommCare APA genyen?}};
+
+  % --- Senaryo 1
+  \node[card, minimum width=7.9cm, minimum height=2.85cm] (c1) at (4.05,2.45) {};
+  \draw[apablue, line width=2.6pt, line cap=round] ($(c1.north west)+(0.2,0)$) -- ($(c1.north east)+(-0.2,0)$);
+  \node at (1.0,2.45) {\includegraphics[height=1.05cm]{playwright}};
+  \node[anchor=north west] at (1.95,3.72)
+    {\textcolor{apablue}{\headfont\fontsize{9pt}{10pt}\selectfont Senaryo 1}\enspace\lbl{Navigatè otomatik}};
+  \node[anchor=north west, text width=5.85cm, align=flush left] at (1.95,3.28)
+    {\body{Yon navigatè san ekran (Playwright) konekte sou CommCare, li lanse ekspòtasyon yo
+     epi li telechaje ka yo an xlsx, menm jan yon moun t ap fè l.}};
+  \node[anchor=west] at (1.95,1.33) {\chip{\includegraphics[height=0.3cm]{aws_lambda}}{Lambda (imaj konteynè)}
+    \hspace{4pt}\chip{\includegraphics[height=0.3cm]{aws_s3}}{depo S3}};
+
+  % --- Senaryo 2
+  \node[card, minimum width=7.9cm, minimum height=2.85cm] (c2) at (12.95,2.45) {};
+  \draw[apablue, line width=2.6pt, line cap=round] ($(c2.north west)+(0.2,0)$) -- ($(c2.north east)+(-0.2,0)$);
+  \node at (9.95,2.45) {\httpxbadge[11pt]};
+  \node[anchor=north west] at (10.85,3.72)
+    {\textcolor{apablue}{\headfont\fontsize{9pt}{10pt}\selectfont Senaryo 2}\enspace\lbl{API CommCare}};
+  \node[anchor=north west, text width=5.85cm, align=flush left] at (10.85,3.28)
+    {\body{Script la rele API CommCare a ak yon kle sekirize, epi li pran sèlman sa ki chanje
+     depi dènye fwa a (JSON). Pa bezwen navigatè ankò.}};
+  \node[anchor=west] at (10.85,1.33) {\chip{\includegraphics[height=0.3cm]{aws_lambda}}{Lambda}
+    \hspace{4pt}\chip{\includegraphics[height=0.3cm]{aws_s3}}{bucket S3 dedye}
+    \hspace{4pt}\chip{\textcolor{apaink}{\small\faKey}}{kle API}};
+
+  % --- Branch yo
+  \draw[flow] (q.south) ++(-1.2,0) |- (4.05,4.55) -- (c1.north);
+  \draw[flow] (q.south) ++(1.2,0) |- (12.95,4.55) -- (c2.north);
+  \node[pill, fill=white, draw=apaline, text=apaink] at (4.05,4.55) {Plan Standard · san API};
+  \node[pill, fill=white, draw=apaline, text=apaink] at (12.95,4.55) {Plan Pro oswa plis · ak API};
+
+  % --- Menm rès sistèm nan
+  \node[card, inner xsep=10pt, inner ysep=5pt] (r) at (8.5,0.32)
+    {\body{Apre sa, se menm sistèm nan:}\hspace{8pt}%
+     \tikz[baseline=-0.6ex]\node[pill, fill=apacoral, text=white]{2 Netwaye};%
+     \hspace{4pt}\textcolor{apagray}{\faArrowRight}\hspace{4pt}%
+     \tikz[baseline=-0.6ex]\node[pill, fill=apayellow, text=apaink]{3 Pibliye};%
+     \hspace{4pt}\textcolor{apagray}{\faArrowRight}\hspace{4pt}%
+     \raisebox{-0.12cm}{\includegraphics[height=0.42cm]{looker_studio}}\hspace{3pt}\lbl{Dachbòd}};
+  \draw[flow] (c1.south) -- (c1.south |- r.north);
+  \draw[flow] (c2.south) -- (c2.south |- r.north);
+\end{tikzpicture}
+\end{document}

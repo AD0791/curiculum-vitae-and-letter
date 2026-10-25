@@ -1,0 +1,65 @@
+% Figi A : twa etap otomatik yo, de goch a dwat, ak logo chak eleman.
+\begin{tikzpicture}[x=1cm, y=1cm]
+  % --- Bann anwo : orè ak lansman manyèl
+  \fill[apaink!5, rounded corners=6pt] (0,5.15) rectangle (17,5.8);
+  \node[anchor=west] at (0.2,5.475) {\body{\textcolor{apablue}{\faMoon[regular]}\enspace
+    \textbf{Chak jou a minwi}, twa etap yo fèt poukont yo}};
+  \node[anchor=east] at (16.8,5.475) {\body{\textcolor{apacoral}{\faUserCog}\enspace
+    Espesyalis MEAL la ka relanse nenpòt etap li menm (AWS Lambda)}};
+
+  % --- Kolòn yo
+  \lane{0}{1.9}{apaink}{}{Sous}{white}{}
+  \lane{2.25}{6.15}{apablue}{1}{Ranmase}{white}{aws_lambda}
+  \lane{6.5}{9.9}{apacoral}{2}{Netwaye}{white}{aws_lambda}
+  \lane{10.25}{13.5}{apayellow}{3}{Pibliye}{apaink}{aws_lambda}
+  \lane{13.85}{17.0}{apaink}{}{Sa APA jwenn}{white}{}
+
+  % --- Sous
+  \node[card, minimum width=1.6cm, minimum height=2.3cm] (cc) at (0.95,2.1)
+    {\includegraphics[height=0.8cm]{commcare_mark}\\[3pt]\lbl{CommCare}\\\sub{fòmilè PLDL}};
+
+  % --- 1 Ranmase : de senaryo, yon sèl depo
+  \node[card, minimum width=1.75cm, minimum height=1.45cm] (s1) at (3.2,3.1)
+    {\includegraphics[height=0.48cm]{playwright}\\[1pt]\lbl{Senaryo 1}\\\sub{san API · xlsx}};
+  \node[card, minimum width=1.75cm, minimum height=1.45cm] (s2) at (3.2,1.1)
+    {\httpxbadge\\[3pt]\lbl{Senaryo 2}\\\sub{ak API · JSON}};
+  \node[pill, fill=white, draw=apablue, text=apablue] at (3.2,2.1) {oswa};
+  \node[card, minimum width=1.45cm, minimum height=1.9cm] (s3b) at (5.3,2.1)
+    {\includegraphics[height=0.6cm]{aws_s3}\\[3pt]\lbl{Done bwit}\\\sub{S3 · pa dat}};
+
+  % --- 2 Netwaye
+  \node[card, minimum width=1.55cm, minimum height=1.9cm] (pl) at (7.35,2.1)
+    {\includegraphics[height=0.5cm]{polars}\\[3pt]\lbl{EDA}\\\sub{kontwòl kalite}};
+  \node[card, minimum width=1.45cm, minimum height=1.9cm] (s3p) at (9.05,2.1)
+    {\includegraphics[height=0.6cm]{aws_s3}\\[3pt]\lbl{Done pwòp}\\\sub{S3 · Parquet}};
+
+  % --- 3 Pibliye : twa depo
+  \hcard{bq}{11.875,3.45}{3.0cm}{\lgo{bigquery}}{BigQuery}{upsert (MERGE)}
+  \hcard{gs}{11.875,2.1}{3.0cm}{\lgo{google_sheets}}{Google Sheet}{anomali yo}
+  \hcard{my}{11.875,0.75}{3.0cm}{\lgo{mysql}}{Bakòp}{Hostinger · upsert}
+
+  % --- Sa APA jwenn
+  \hcard{lk}{15.425,3.45}{3.0cm}{\lgo{looker_studio}}{Dachbòd}{Looker Studio}
+  \hcard{me}{15.425,2.1}{3.0cm}{\textcolor{apablue}{\Large\faUserCheck}}{Ofisye MEAL}{revize, korije}
+  \hcard[dashed, draw=apagray]{ph}{15.425,0.75}{3.0cm}{\lgo{php}}{Aplikasyon PHP}{si direksyon an vle}
+
+  % --- Flèch yo
+  \draw[flow] (cc.east) -- ++(0.25,0) |- (s1.west);
+  \draw[flow] (cc.east) -- ++(0.25,0) |- (s2.west);
+  \draw[flow] (s1.east) -- ++(0.22,0) |- (s3b.west);
+  \draw[flow] (s2.east) -- ++(0.22,0) |- (s3b.west);
+  \draw[flow] (s3b.east) -- (pl.west);
+  \draw[flow] (pl.east) -- (s3p.west);
+  \draw[flow] (s3p.east) -- ++(0.3,0) |- (bq.west);
+  \draw[flow] (s3p.east) -- ++(0.3,0) |- (gs.west);
+  \draw[flow] (s3p.east) -- ++(0.3,0) |- (my.west);
+  \draw[flow] (bq.east) -- (lk.west);
+  \draw[flow] (gs.east) -- (me.west);
+  \draw[dflow] (my.east) -- (ph.west);
+
+  \ifapahl
+    \draw[apacoral, line width=2pt, rounded corners=9pt] (2.13,-0.12) rectangle (6.27,5.02);
+    \node[pill, fill=apacoral, text=white] at (4.2,-0.45)
+      {\faExchange*\enspace Sèl pyès ki chanje nan Faz 2};
+  \fi
+\end{tikzpicture}

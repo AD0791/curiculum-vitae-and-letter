@@ -1,0 +1,96 @@
+% Antèt pandoc (-H) pou twa pwopozisyon yo : koulè logo APA a, polis, tèt paj, tit.
+\usepackage{fontspec}
+\setmainfont{FiraSans}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-SemiBold,
+  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic]
+\newfontfamily\headfont{Montserrat}[Extension=.otf, UprightFont=*-Bold, BoldFont=*-ExtraBold]
+\setmonofont{FiraMono}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold, Scale=0.86]
+\usepackage{xcolor}
+\definecolor{apablue}{HTML}{3D61E9}
+\definecolor{apacoral}{HTML}{FF485E}
+\definecolor{apayellow}{HTML}{FEDE44}
+\definecolor{apaink}{HTML}{1F2937}
+\definecolor{apagray}{HTML}{6B7280}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{caption}
+\usepackage{etoolbox}
+\usepackage{colortbl}
+
+% Kreyòl : pa gen modèl koupe mo nan babel, donk tèks la rete aliye a goch san koupe mo.
+\AtBeginDocument{\RaggedRight}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\renewcommand{\figurename}{Figi}
+\renewcommand{\tablename}{Tablo}
+\DeclareCaptionFont{apagray}{\color{apagray}}
+\DeclareCaptionFont{apablue}{\color{apablue}}
+\captionsetup{font={footnotesize,apagray}, labelfont={bf,apablue}, labelsep=period, skip=3pt}
+\captionsetup[figure]{aboveskip=2pt, belowskip=0pt}
+\setlength{\intextsep}{6pt}
+\setlength{\parskip}{4.5pt}
+\color{apaink}
+
+% Kenbe yon tit ak figi ki swiv li ansanm. Pa itilize pakè needspace : penalite -100 li a
+% fè TeX koupe paj la twò bonè lè paj yo pa aliye anba (\raggedbottom).
+\makeatletter
+\newcommand{\apaneedspace}[1]{\par\begingroup\dimen@ii\pagegoal\advance\dimen@ii-\pagetotal
+  \ifdim #1>\dimen@ii\relax\ifdim\dimen@ii>\z@\newpage\fi\fi\endgroup}
+\makeatother
+
+% Tit seksyon yo
+\titleformat{\section}{\headfont\fontsize{12.5pt}{15pt}\selectfont\color{apablue}}
+  {\textcolor{apacoral}{\thesection.}}{0.45em}{}
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\titleformat{\subsection}{\headfont\fontsize{10.5pt}{13pt}\selectfont\color{apaink}}
+  {\thesubsection}{0.45em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% Tablo yo : pi piti, liy ble
+\AtBeginEnvironment{longtable}{\small}
+\arrayrulecolor{apablue!55}
+
+% Tèt ak pye paj
+\setlength{\headheight}{20pt}
+\fancypagestyle{apa}{%
+  \fancyhf{}
+  \fancyhead[L]{\includegraphics[height=0.55cm]{../assets/apa_logo.png}}
+  \fancyhead[R]{\footnotesize\color{apagray}Pwopozisyon teknik · Done PLDL ak dachbòd}
+  \fancyfoot[L]{\footnotesize\color{apagray}Alexandro Disla · alexandrodisla@hotmail.com · (+509) 4148-3700}
+  \fancyfoot[R]{\footnotesize\color{apagray}\thepage\,/\,\pageref*{LastPage}}
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\fancypagestyle{apafirst}{%
+  \fancyhf{}
+  \fancyfoot[L]{\footnotesize\color{apagray}Alexandro Disla · alexandrodisla@hotmail.com · (+509) 4148-3700}
+  \fancyfoot[R]{\footnotesize\color{apagray}\thepage\,/\,\pageref*{LastPage}}
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\pagestyle{apa}
+
+% Blòk tit la : logo a goch, tit a dwat, liy twa koulè logo a
+\makeatletter
+\def\@apasubtitle{}
+\newcommand{\subtitle}[1]{\gdef\@apasubtitle{#1}}
+\renewcommand{\maketitle}{%
+  \thispagestyle{apafirst}%
+  \noindent\begin{minipage}[c]{0.27\textwidth}
+    \includegraphics[width=3.9cm]{../assets/apa_logo.png}
+  \end{minipage}%
+  \begin{minipage}[c]{0.73\textwidth}\raggedleft
+    {\footnotesize\color{apagray}\MakeUppercase{Pwopozisyon teknik pou Anseye Pou Ayiti}\par}
+    \vspace{2pt}
+    {\headfont\color{apaink}\fontsize{17pt}{20pt}\selectfont\@title\par}
+    \vspace{3pt}
+    {\headfont\color{apablue}\fontsize{10.5pt}{13pt}\selectfont\@apasubtitle\par}
+    \vspace{3pt}
+    {\small\color{apagray}\@author\enspace·\enspace\@date\par}
+  \end{minipage}\par
+  \vspace{7pt}
+  \noindent{\color{apablue}\rule{0.5\textwidth}{2.6pt}}%
+  {\color{apacoral}\rule{0.3\textwidth}{2.6pt}}%
+  {\color{apayellow}\rule{0.2\textwidth}{2.6pt}}\par
+  \vspace{4pt}}
+\makeatother

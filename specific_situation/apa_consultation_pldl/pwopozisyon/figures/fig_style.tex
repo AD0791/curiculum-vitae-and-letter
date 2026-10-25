@@ -1,0 +1,72 @@
+% Stil komen pou tout figi yo (xelatex). Figi yo trase a gwosè reyèl (17 cm lajè),
+% konsa tèks yo rete lizib lè yo antre nan pwopozisyon an san rediksyon.
+\usepackage{fontspec}
+\setmainfont{FiraSans}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-SemiBold,
+  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic]
+\newfontfamily\headfont{Montserrat}[Extension=.otf, UprightFont=*-Bold, BoldFont=*-ExtraBold]
+\usepackage{fontawesome5}
+\usetikzlibrary{arrows.meta, calc, shadows.blur, shapes.symbols, decorations.pathreplacing}
+\graphicspath{{../../assets/logos/}{../../assets/}}
+
+% Palèt logo APA a
+\definecolor{apablue}{HTML}{3D61E9}
+\definecolor{apacoral}{HTML}{FF485E}
+\definecolor{apayellow}{HTML}{FEDE44}
+\definecolor{apaink}{HTML}{1F2937}
+\definecolor{apagray}{HTML}{6B7280}
+\definecolor{apaline}{HTML}{D6DAE1}
+
+\newif\ifapahl % true = mete aksan sou etap 1 an (vèsyon Faz pa faz)
+
+\newcommand{\lbl}[1]{{\fontsize{7.8pt}{9pt}\selectfont\bfseries\color{apaink}#1}}
+\newcommand{\sub}[1]{{\fontsize{6.6pt}{7.8pt}\selectfont\color{apagray}#1}}
+\newcommand{\body}[1]{{\fontsize{7.6pt}{9.4pt}\selectfont\color{apaink}#1}}
+\newcommand{\lgo}[2][0.58cm]{\includegraphics[height=#1,width=0.75cm,keepaspectratio]{#2}}
+% httpx2 pa gen logo : yon badj tèks, jamè papiyon ansyen httpx la
+\newcommand{\httpxbadge}[1][7.4pt]{{\setlength{\fboxsep}{2.4pt}%
+  \colorbox{apaink}{\headfont\fontsize{#1}{#1}\selectfont\color{white}HTTPX2}}}
+
+\tikzset{
+  card/.style={draw=apaline, line width=0.5pt, fill=white, rounded corners=5pt,
+    blur shadow={shadow blur steps=6, shadow xshift=0.5pt, shadow yshift=-0.7pt,
+      shadow opacity=22}, align=center, inner sep=3pt},
+  flow/.style={-{Stealth[length=5.5pt, width=4.5pt]}, line width=0.95pt, color=apaink!75},
+  dflow/.style={flow, dashed, color=apagray},
+  key/.style={densely dotted, line width=0.8pt, color=apagray},
+  pill/.style={rounded corners=4pt, inner xsep=4pt, inner ysep=2pt,
+    font=\fontsize{7.2pt}{8pt}\selectfont\bfseries},
+  badge/.style={circle, inner sep=1.3pt, fill=apacoral, text=white,
+    font=\fontsize{6.2pt}{6.2pt}\selectfont},
+  num/.style={circle, inner sep=0pt, minimum size=0.42cm,
+    font=\headfont\fontsize{8pt}{8pt}\selectfont},
+}
+
+% Kat orizontal : logo a goch, tèks a dwat.
+% \hcard[opsyon]{non}{pozisyon}{lajè}{logo}{etikèt}{sou-etikèt}
+\newcommand{\hcard}[7][]{%
+  \node[card, minimum width=#4, minimum height=1.0cm, #1] (#2) at (#3) {};
+  \node at ($(#2.west)+(0.47,0)$) {#5};
+  \node[anchor=west, align=left, inner sep=0pt] at ($(#2.west)+(0.88,0)$) {\lbl{#6}\\[-1pt]\sub{#7}};
+}
+
+% Kolòn ak tèt koulè : \lane{x1}{x2}{koulè}{nimewo}{tit}{koulè tèks}{logo tèt}
+\newcommand{\laneTop}{4.9}
+\newcommand{\laneHead}{4.3}
+\newcommand{\lane}[7]{%
+  \fill[#3!8, rounded corners=8pt] (#1,0) rectangle (#2,\laneTop);
+  \fill[#3, rounded corners=8pt] (#1,\laneHead) rectangle (#2,\laneTop);
+  \fill[#3] (#1,\laneHead) rectangle (#2,\laneHead+0.25);
+  \draw[#3!70, line width=0.6pt, rounded corners=8pt] (#1,0) rectangle (#2,\laneTop);
+  \ifx&#4&
+    \node[anchor=west, text=#6, font=\headfont\fontsize{8.6pt}{9pt}\selectfont]
+      at (#1+0.18,\laneHead/2+\laneTop/2) {#5};
+  \else
+    \node[num, fill=white, text=apaink] at (#1+0.38,\laneHead/2+\laneTop/2) {#4};
+    \node[anchor=west, text=#6, font=\headfont\fontsize{8.6pt}{9pt}\selectfont]
+      at (#1+0.68,\laneHead/2+\laneTop/2) {#5};
+  \fi
+  \ifx&#7&\else
+    \node[anchor=east, inner sep=0pt] at (#2-0.14,\laneHead/2+\laneTop/2)
+      {\includegraphics[height=0.4cm]{#7}};
+  \fi
+}

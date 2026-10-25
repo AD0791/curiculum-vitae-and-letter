@@ -50,8 +50,10 @@ merged PDF. `panos_mel_acq/` has the shape without a `credentials/` directory; `
 mature but predates the local `credentials/` convention (see below) and remains the model for the
 *two posts, one CV* case. The older
 `mercy_corps/`, `acted_assistantDB/`, `iom_web_content_developer/` and `parole_et_action/` predate
-parts of the pattern, and `remoteleverage_data_analyst/` is a stub holding outputs only. The shape
-is:
+parts of the pattern, and `remoteleverage_data_analyst/` is a stub holding outputs only.
+`apa_consultation_pldl/` is the model for a third case, a **consulting pitch** with no advert: a
+tailored CV plus technical proposals written in Markdown, described under "Consulting proposals"
+below. The shape is:
 
 | File | Role |
 |---|---|
@@ -100,6 +102,35 @@ are fine; everything from the `Objet :` / `Subject:` line down to the last line 
 must be exactly what gets sent, bare URLs included. Markdown linters will flag those bare URLs
 (`MD034`) — that warning is wrong here and stays unfixed. The rule applies to any message drafted
 for the user to send, not only to `emails.md`.
+
+## Consulting proposals (`apa_consultation_pldl/`)
+
+A pitch to a client rather than an answer to an advert. `apa_consultation_pldl/` (Anseye Pou Ayiti,
+CommCare data for the PLDL programme) is the reference. Its `inputs/brief_kliyan.md` holds the
+user's brief verbatim in place of an advert. There is no `credentials/` directory and no cover
+letter: the proposal does that job. It differs from an application dossier in four ways:
+
+- **Proposals are Markdown, built to a branded PDF** by `pandoc --pdf-engine=xelatex -H
+  apa_header.tex --lua-filter apa_filters.lua`. The header carries the client's palette, fonts,
+  title block and page furniture. The Lua filter swaps each figure's PNG, which the `.md` displays,
+  for its vector PDF, and keeps a heading on the same page as the figure or table that follows it.
+  Several alternative versions are written for different readers, and the user sends one.
+- **Every diagram is built from the official logo of each component**, as TikZ cards
+  (`pwopozisyon/figures/fig_style.tex`): flow, architecture by provider zone, scenario choice,
+  cost cards, phase ribbon. Logos come from the vendors' own kits, are never recoloured or
+  distorted, and are recorded with URL and terms in `assets/logos/SOURCES.md`. Raw archives under
+  `assets/logos/_src/` are gitignored. A product without a logo gets a text badge; never borrow
+  another project's logo.
+- **The build checks what it ships**: page count per proposal (2–3) and for the CV (≤ 2), a scan
+  of every output for the client's internal secrets and host names, and that the CV does not
+  mention the client when the user asked for that job to be removed.
+- **Kreyòl documents** use the client's own vocabulary (APA says *fòmilè*, *dachbòd*, *bakòp*,
+  never *sondaj*), no space before `:`, ragged-right text without hyphenation (babel has no
+  Haitian Creole patterns), and no `lang` setting.
+
+Three LaTeX traps this dossier hit: the `needspace` package's `\penalty-100` makes TeX break pages
+early under `\raggedbottom`, so `apa_header.tex` defines its own `\apaneedspace`. `\lg` is already
+a math operator. `fontawesome5` writes *alt* icons starred (`\faSync*`, not `\faSyncAlt`).
 
 ## Agent Expertise
 When working in this repository, the agent should act with the following expertise:

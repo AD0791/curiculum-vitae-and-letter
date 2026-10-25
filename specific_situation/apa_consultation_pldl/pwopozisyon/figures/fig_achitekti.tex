@@ -1,0 +1,92 @@
+% Figi B : achitekti konplè, yon zòn pou chak founisè.
+\documentclass[tikz,border=4pt]{standalone}
+\input{fig_style}
+\newcommand{\zone}[5]{% x1 y1 x2 y2 koulè
+  \draw[#5!45, fill=#5!4, line width=0.7pt, rounded corners=9pt] (#1,#2) rectangle (#3,#4);}
+\begin{document}
+\begin{tikzpicture}[x=1cm, y=1cm]
+  % --- Zòn yo
+  \zone{0}{0.75}{2.55}{8.5}{apablue}
+  \zone{2.95}{0.75}{10.45}{8.5}{apaink}
+  \zone{10.85}{4.85}{17}{8.5}{apablue}
+  \zone{10.85}{0.75}{17}{4.45}{apacoral}
+  \node[anchor=north west, inner sep=0pt] at (0.18,8.32) {\includegraphics[height=0.4cm]{commcare_lockup}};
+  \node[anchor=north west, inner sep=0pt] (awsl) at (3.13,8.32) {\includegraphics[height=0.45cm]{aws_cloud}};
+  \node[anchor=west] at ($(awsl.east)+(0.05,0)$) {\lbl{Kont AWS APA a}\enspace\sub{(deja egziste)}};
+  \node[anchor=north west, inner sep=0pt] (gcl) at (11.03,8.27) {\includegraphics[height=0.32cm]{google_cloud}};
+  \node[anchor=west] at ($(gcl.east)+(0.05,0)$) {\sub{+ Google Drive}};
+  \node[anchor=north west, inner sep=0pt] (hol) at (11.03,4.3) {\includegraphics[height=0.4cm]{hostinger}};
+  \node[anchor=west] at ($(hol.east)+(0.08,0)$) {\lbl{Hostinger}\enspace\sub{(sèvè APA a)}};
+
+  % --- CommCare
+  \node[card, minimum width=1.9cm, minimum height=2.2cm] (cc) at (1.275,5.9)
+    {\includegraphics[height=0.8cm]{commcare_mark}\\[3pt]\lbl{Ka + fòmilè}\\\sub{pwogram PLDL}};
+
+  \node[align=center] at (1.275,4.15) {\sub{Plan Standard: S1}\\\sub{Plan Pro oswa plis: S2}};
+
+  % --- AWS : kolòn goch
+  \hcard{eb}{4.65,7.3}{3.0cm}{\lgo{aws_eventbridge}}{EventBridge}{chak jou a minwi}
+  \hcard[draw=apablue, line width=1.1pt]{l1}{4.65,5.9}{3.0cm}{\lgo{aws_lambda}}{Ranmase}{Lambda 1}
+  \node[card, minimum width=1.4cm, minimum height=0.85cm] (m1) at (3.9,4.5)
+    {\includegraphics[height=0.36cm]{playwright}\hspace{2pt}\includegraphics[height=0.3cm]{aws_ecr}\\[1pt]\sub{Senaryo 1}};
+  \node[card, minimum width=1.4cm, minimum height=0.85cm] (m2) at (5.4,4.5)
+    {\httpxbadge[6.4pt]\hspace{2pt}{\scriptsize\faKey}\\[1pt]\sub{Senaryo 2}};
+  \hcard{sm}{4.65,1.7}{3.0cm}{\lgo{aws_secrets}}{Sekrè yo}{Secrets Manager}
+
+  % --- AWS : kolòn dwat
+  \hcard{me}{8.75,7.3}{3.2cm}{\textcolor{apacoral}{\Large\faUserCog}}{Espesyalis MEAL}{ka lanse l li menm}
+  \hcard{rw}{8.75,5.9}{3.2cm}{\lgo{aws_s3}}{S3 · raw/}{xlsx/JSON · pa dat}
+  \hcard[draw=apacoral, line width=1.1pt]{l2}{8.75,4.5}{3.2cm}{\lgo{aws_lambda}}{Netwaye}{Lambda 2 · Polars}
+  \hcard{cl}{8.75,3.1}{3.2cm}{\lgo{aws_s3}}{S3 · clean/}{Parquet + anomali}
+  \hcard[draw=apayellow!85!black, line width=1.1pt]{l3}{8.75,1.7}{3.2cm}{\lgo{aws_lambda}}{Pibliye}{Lambda 3}
+  \node[num, fill=apablue, text=white] at (l1.north west) {1};
+  \node[num, fill=apacoral, text=white] at (l2.north west) {2};
+  \node[num, fill=apayellow, text=apaink] at (l3.north west) {3};
+
+  % --- Google
+  \hcard{bq}{12.45,7.2}{2.95cm}{\lgo{bigquery}}{BigQuery}{MERGE · upsert}
+  \hcard{lk}{15.5,7.2}{2.8cm}{\lgo{looker_studio}}{Dachbòd}{Looker Studio}
+  \node at (15.3,6.45) {\sub{\faDatabase\enspace 1 rekèt GoogleSQL / eleman}};
+  \hcard{gs}{12.45,5.65}{2.95cm}{\lgo{google_sheets}}{Google Sheet}{anomali pou revize}
+  \hcard{of}{15.5,5.65}{2.8cm}{\textcolor{apablue}{\Large\faUserCheck}}{Ofisye MEAL}{korije erè yo}
+
+  % --- Hostinger
+  \hcard{my}{12.45,3.2}{3.0cm}{\lgo{mysql}}{Bakòp}{nouvo tablo · upsert}
+  \hcard[dashed, draw=apagray]{ph}{12.45,1.6}{3.0cm}{\lgo{php}}{Aplikasyon PHP}{si direksyon an vle}
+  \node[anchor=west, text width=2.75cm, align=flush left] at (14.15,2.4)
+    {\sub{\textcolor{apacoral}{\faShield*}\enspace 31 tablo ki egziste yo ak webhook ONA yo pa chanje ditou.}};
+
+  % --- Badj upsert
+  \node[badge] at ($(bq.north east)+(-0.12,-0.06)$) {\faSync*};
+  \node[badge] at ($(my.north east)+(-0.12,-0.06)$) {\faSync*};
+
+  % --- Flux
+  \draw[flow] (cc.east) -- (l1.west);
+  \draw[flow] (eb.south) -- (l1.north);
+  \draw[dflow] (me.west) -| ($(l1.north east)+(-0.35,0)$);
+  \draw[apablue, line width=0.7pt] (l1.south) ++(-0.65,0) -- (m1.north);
+  \draw[apablue, line width=0.7pt] (l1.south) ++(0.65,0) -- (m2.north);
+  \draw[flow] (l1.east) -- (rw.west);
+  \draw[flow] (rw.south) -- (l2.north);
+  \draw[flow] (l2.south) -- (cl.north);
+  \draw[flow] (cl.south) -- (l3.north);
+  \draw[flow] (l3.east) -- ++(0.45,0) |- (bq.west);
+  \draw[flow] (l3.east) -- ++(0.45,0) |- (gs.west);
+  \draw[flow] (l3.east) -- ++(0.45,0) |- (my.west);
+  \draw[flow] (bq.east) -- (lk.west);
+  \draw[flow] (gs.east) -- (of.west);
+  \draw[dflow] (my.south) -- (ph.north);
+  % --- Kle
+  \draw[key] (sm.north) ++(-0.65,0) -- (m1.south);
+  \draw[key] (sm.north) ++(0.65,0) -- (m2.south);
+  \draw[key] (sm.east) -- node[above, inner sep=1.5pt] {\sub{kle}} (l3.west);
+
+  % --- Lejann
+  \begin{scope}[shift={(0.3,0.25)}]
+    \draw[flow] (0,0) -- (0.7,0); \node[anchor=west] at (0.8,0) {\sub{flux done chak jou}};
+    \draw[dflow] (3.6,0) -- (4.3,0); \node[anchor=west] at (4.4,0) {\sub{opsyonèl oswa manyèl}};
+    \draw[key] (7.5,0) -- (8.2,0); \node[anchor=west] at (8.3,0) {\sub{kle sekrè (pa janm nan kòd la)}};
+    \node[badge] at (12.15,0) {\faSync*}; \node[anchor=west] at (12.35,0) {\sub{upsert: mete ajou san doublon}};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

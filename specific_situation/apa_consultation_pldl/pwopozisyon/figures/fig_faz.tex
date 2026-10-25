@@ -1,0 +1,33 @@
+% Figi E : wout faz pa faz, san dire pou chak faz ; fenèt total 2 a 3 mwa.
+\documentclass[tikz,border=4pt]{standalone}
+\input{fig_style}
+\newcommand{\ic}[1]{\includegraphics[height=0.42cm,width=0.7cm,keepaspectratio]{#1}}
+% \faz{x}{koulè}{koulè tèks}{nimewo}{tit}{ikòn}{livrab}{opsyon chevron}
+\newcommand{\faz}[8]{%
+  \node[signal, signal to=east, #8, signal pointer angle=128, minimum width=4.32cm,
+    minimum height=1.05cm, fill=#2, text=#3, inner sep=2pt] at (#1,0)
+    {\begin{tabular}{@{}c@{}}{\headfont\fontsize{7pt}{8pt}\selectfont FAZ #4}\\[-1pt]
+     {\headfont\fontsize{8.8pt}{10pt}\selectfont #5}\end{tabular}};
+  \node at (#1,-0.82) {#6};
+  \node[text width=3.75cm, align=flush center] at (#1,-1.62) {\body{#7}};}
+\begin{document}
+\begin{tikzpicture}[x=1cm, y=1cm]
+  \faz{2.15}{apaink!75}{white}{0}{Kadraj}
+    {\textcolor{apaink}{\large\faClipboardList}\hspace{6pt}\ic{commcare_mark}\hspace{6pt}\textcolor{apaink}{\large\faKey}}
+    {Aksè yo, plan CommCare a, diksyonè done ak endikatè dachbòd la}{signal from=nowhere}
+  \faz{6.37}{apablue}{white}{1}{Pipeline + Dachbòd}
+    {\ic{playwright}\hspace{3pt}\ic{aws_lambda}\hspace{3pt}\ic{aws_s3}\hspace{3pt}\ic{polars}\hspace{3pt}\ic{bigquery}\hspace{3pt}\ic{looker_studio}}
+    {Senaryo 1 mache chak minwi. Dachbòd, Google Sheet MEAL ak Bakòp an plas.}{signal from=west}
+  \faz{10.59}{apacoral}{white}{2}{Senaryo 2 (API)}
+    {\httpxbadge\hspace{6pt}\ic{commcare_mark}\hspace{6pt}\textcolor{apaink}{\large\faKey}}
+    {Sèl script Ranmase a chanje. Rès sistèm nan pa bouje.}{signal from=west}
+  \faz{14.81}{apayellow}{apaink}{3}{Transfè}
+    {\textcolor{apaink}{\large\faGraduationCap}\hspace{6pt}\ic{google_sheets}\hspace{6pt}\textcolor{apaink}{\large\faBook}}
+    {Tès, dokimantasyon an kreyòl, fòmasyon espesyalis MEAL la, remiz}{signal from=west}
+  \node[pill, fill=white, draw=apacoral, text=apacoral] at (10.59,0.78) {si plan CommCare a gen API};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, line width=0.8pt, apagray]
+    (0.05,-2.42) -- (16.95,-2.42);
+  \node at (8.5,-2.92) {\lbl{\fontsize{8.6pt}{10pt}\selectfont Fenèt total: 2 a 3 mwa
+    \textcolor{apagray}{\mdseries (3 mwa sèlman si sa nesesè)}}};
+\end{tikzpicture}
+\end{document}
