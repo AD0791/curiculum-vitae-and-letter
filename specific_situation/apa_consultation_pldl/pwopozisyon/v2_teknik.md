@@ -12,7 +12,7 @@ geometry: "a4paper, top=1.9cm, bottom=1.8cm, left=2cm, right=2cm, headsep=8pt, f
 # Kontèks ak objektif
 
 Yon pati nan pwogram PLDL la ranmase sou CommCare. Objektif la se rale done sa yo otomatikman chak
-jou, fè analiz eksploratwa (EDA) sou yo, epi bati yon dachbòd Looker Studio, pandan nou reitilize sa
+jou, fè analiz eksploratwa (EDA) sou yo, epi bati yon dachbòd Looker Studio, pandan nou reyitilise sa
 APA genyen deja: kont AWS la (Lambda, S3, Secrets Manager, orè minwi a), Google Sheets, Looker Studio
 ak baz MySQL la sou Hostinger. Tout sistèm nan bati ak *upsert* nan tèt li: nenpòt etap ka relanse
 san li pa kreye doublon.
@@ -26,7 +26,7 @@ ki vin apre a, kidonk pa gen okenn sèvè ki toujou limen. Espesyalis MEAL la ka
 separeman nan konsòl AWS la. Modil Ranmase a gen de vèsyon ki ka ranplase youn lòt san rès sistèm
 nan pa bouje:
 
-- **Senaryo 1, plan san API.** Playwright, nan yon imaj konteynè Lambda (Chromium san ekran),
+- **Senaryo 1, plan san API.** Playwright, nan yon imaj konntenè Lambda (Chromium san ekran),
   konekte ak yon kont CommCare dedye, li lanse ekspòtasyon yo, li tann yo prepare, epi li telechaje
   fichye xlsx yo.
 - **Senaryo 2, plan Pro oswa plis.** HTTPX2 rele Case API v2 CommCare a (`/api/case/v2/`) ak yon
@@ -69,12 +69,22 @@ antre nan sistèm nan nan pwochen minwi a.
 - Yon kont sèvis GCP ak dwa minimòm: BigQuery sou dataset la sèlman, ak Sheet la pataje avè l.
 - Yon kont CommCare dedye pou otomatizasyon; kle API a limite pa adrès IP lè sa posib.
 
-# Dachbòd Looker Studio
+# Sa APA ap jwenn
 
-Chak eleman dachbòd la (kat, endikatè, grafik, tablo) gen pwòp sous done li: yon rekèt GoogleSQL
-nan BigQuery. Sa fè chak chif fasil pou verifye, epi kach Looker Studio a kenbe rekèt yo nan kota
-gratis la. Paj yo: apèsi (endikatè kle), jewografi (kat, depatman, komin), kowòt ak tandans, kalite
-done (ak GPS, san GPS, anomali).
+- **Twa Lambda Python yo, deplwaye nan kont AWS APA a**, ak orè minwi a ak relans manyèl pa
+  espesyalis MEAL la. Tout kòd la rete nan depo Git APA a.
+- **Yon dachbòd Looker Studio** pou done PLDL yo. Chak eleman (kat, endikatè, grafik, tablo) gen
+  pwòp rekèt GoogleSQL li nan BigQuery: chak chif fasil pou verifye, epi kach Looker Studio a kenbe
+  rekèt yo nan kota gratis la. Paj yo: apèsi (endikatè kle), jewografi (kat, depatman, komin),
+  kowòt ak tandans, kalite done (ak GPS, san GPS, anomali).
+- **Yon Google Sheet pou ofisye MEAL la**, nan Google Drive li: onglè anomali yo rekalkile chak jou
+  pou li korije erè yo nan CommCare.
+- **Yon bakòp nan baz MySQL APA a**: nouvo tablo `commcare_pldl` ak kle inik `case_id`. Tablo ki la
+  deja yo ak aplikasyon PHP a pa chanje; pita, si direksyon an vle, aplikasyon PHP a ka montre pwòp
+  dachbòd li ak menm done sa yo.
+- **Mizajou san doublon (*upsert*)** sou chak depo, jan seksyon 4 la dekri l.
+- **Dokimantasyon an kreyòl ak fòmasyon** pou espesyalis MEAL la: achitekti, relans manyèl, kijan
+  pou ajoute yon endikatè.
 
 # Risk ak solisyon
 
@@ -85,13 +95,18 @@ done (ak GPS, san GPS, anomali).
 | Ekspòtasyon long, limit 15 minit Lambda | Ekspòtasyon pa fòmilè ak pa peryòd. S2 pran sèlman sa ki chanje. |
 | Yon script echwe nan mitan lannwit | Jounal CloudWatch, alèt, relans manyèl. *Upsert* la anpeche doublon. |
 
-# Pri, dire ak livrab
+# Pri ak dire
 
 ![Estimasyon pri pa mwa. Senaryo 2 mande yon plan CommCare Pro oswa plis; si APA deja genyen l, pa gen okenn depans anplis.](figures/fig_pri.png)
 
-Misyon an dire **2 a 3 mwa** (3 sèlman si sa nesesè). Livrab yo: kòd la nan depo Git APA a, twa
-Lambda yo deplwaye, tablo BigQuery ak MySQL yo, dachbòd la, Google Sheet MEAL la, dokimantasyon an
-kreyòl ak fòmasyon espesyalis MEAL la.
+Misyon ap dire **3 mwa**. 3 mwa sa yo ap pèmèt:
+
+- Nou byen devlope pwojè an
+- Nou byen komprann done PLDL yo
+- Nou byen teste pwojè an
+- Asire solidite sistèm nou mete an plas lan
+- Pou sèten nou rete nan limit kote nou pa ogmante depans sèvis niyaj AWS, Hostinger e GCP, APA yo.
+- Byen dokumante pwojè an e fè fòmasyon pou spesyalis MEAL lan.
 
 # Prèv travay
 

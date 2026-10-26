@@ -22,13 +22,12 @@ dachbòd, **san okenn nouvo sèvè**.
 # Sa nou pwopoze
 
 Sistèm nan gen twa etap. Chak etap se yon ti script Python sou AWS Lambda, nan menm kont AWS APA a
-deja itilize pou script li yo. Chak jou a minwi, menm orè ak script ki la deja yo, twa etap yo fèt
-youn apre lòt. Espesyalis MEAL la ka relanse nenpòt nan yo lè li vle.
+deja itilize pou script li yo. Chak jou a minwi twa etap yo ap fèt youn apre lòt. Espesyalis MEAL la ka relanse nenpòt nan yo lè li vle.
 
 ![Twa etap otomatik yo, soti nan CommCare rive nan dachbòd la.](../pwopozisyon/figures/fig_flux.png)
 
-- **Ranmase.** Script la rale ka ak fòmilè PLDL yo nan CommCare epi li sere yo tou bwit nan yon
-  depo S3, pa dat.
+- **Ranmase.** Script la rale ka ak fòmilè PLDL yo nan CommCare epi li sere yo nan yon depo S3,
+  pa dat.
 - **Netwaye.** Yon dezyèm script fè analiz eksploratwa a (EDA): li retire doublon, li tcheke fòma
   ak valè ki pa koryan, epi li mete done pwòp yo apa.
 - **Pibliye.** Twazyèm script la voye done pwòp yo nan BigQuery pou dachbòd la, li mete erè yo nan
@@ -39,7 +38,7 @@ sa a, yon navigatè otomatik (Playwright) fè travay yon moun t ap fè alamen. P
 plan ki pi wo, bay aksè ak API a: script la rele l dirèkteman ak yon kle sekirize (HTTPX2) epi li
 pran sèlman sa ki chanje. Nan tou de ka yo, rès sistèm nan pa chanje ditou.
 
-![Senaryo a depann de plan CommCare a; apre sa, se menm sistèm nan.](../pwopozisyon/figures/fig_senaryo.png)
+![Senaryo a depann de plan CommCare a; apresa, se menm sistèm nan.](../pwopozisyon/figures/fig_senaryo.png)
 
 # Sa APA ap jwenn
 
@@ -58,7 +57,7 @@ pran sèlman sa ki chanje. Nan tou de ka yo, rès sistèm nan pa chanje ditou.
 
 # Pri enfrastrikti a
 
-Nou reitilize enfrastrikti APA genyen deja: kont AWS la, orè minwi a, Google Sheets, Looker Studio
+Nou reyitilise enfrastrikti APA genyen deja: kont AWS la, orè minwi a, Google Sheets, Looker Studio
 ak baz MySQL la sou Hostinger. Sèvis nou ajoute yo rete nan kota gratis yo, paske volim done PLDL
 yo piti: AWS Lambda bay 1 milyon apèl ak 400 000 GB-segonn gratis chak mwa, BigQuery bay 10 GiB
 depo ak 1 TiB rekèt gratis chak mwa.
@@ -67,8 +66,14 @@ depo ak 1 TiB rekèt gratis chak mwa.
 
 # Dire
 
-Misyon an ap dire **2 a 3 mwa**. Twazyèm mwa a ap sèvi sèlman si sa nesesè, pa egzanp si APA chanje
-plan CommCare li pandan travay la.
+Misyon ap dire **3 mwa**. 3 mwa sa yo ap pèmèt:
+
+- Nou byen devlope pwojè an
+- Nou byen komprann done PLDL yo
+- Nou byen teste pwojè an
+- Asire solidite sistèm nou mete an plas lan
+- Pou sèten nou rete nan limit kote nou pa ogmante depans sèvis niyaj AWS, Hostinger e GCP, APA yo.
+- Byen dokumante pwojè an e fè fòmasyon pou spesyalis MEAL lan.
 
 # Konsiltan an
 

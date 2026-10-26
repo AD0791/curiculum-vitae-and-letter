@@ -13,12 +13,12 @@ geometry: "a4paper, top=1.9cm, bottom=1.8cm, left=2cm, right=2cm, headsep=8pt, f
 
 Yon pati nan pwogram PLDL la ranmase sou CommCare. Pwopozisyon sa a mennen done sa yo, chak jou e
 otomatikman, jiska yon dachbòd Looker Studio, an kat faz. Chak faz fini ak livrab APA ka wè epi
-teste. Nou reitilize enfrastrikti APA genyen deja (AWS, Google Sheets, Looker Studio, MySQL sou
+teste. Nou reyitilise enfrastrikti APA genyen deja (AWS, Google Sheets, Looker Studio, MySQL sou
 Hostinger), epi nou bati tout bagay ak *upsert*: yon etap ka relanse san li pa kreye doublon.
 
 # Wout la
 
-![Kat faz, nan lòd livrab yo. Fenèt total la se 2 a 3 mwa.](figures/fig_faz.png)
+![Kat faz, nan lòd livrab yo. Misyon ap dire 3 mwa.](figures/fig_faz.png)
 
 # Sistèm nan an yon sèl foto
 
@@ -39,7 +39,7 @@ ant de senaryo yo.
 
 ## Faz 1 · Pipeline ak dachbòd
 
-- **Livrab:** twa Lambda yo nan kont AWS APA a, chak jou a minwi (Senaryo 1); depo S3 bwit ak pwòp;
+- **Livrab:** twa Lambda yo nan kont AWS APA a, chak jou a minwi (Senaryo 1); depo S3 brit ak pwòp;
   tablo BigQuery ak `MERGE`; Google Sheet anomali pou ofisye MEAL la; nouvo tablo bakòp MySQL;
   dachbòd Looker Studio v1.
 - **Akseptasyon:** sèt jou youn dèyè lòt san entèvansyon; total dachbòd la koresponn ak CommCare;
@@ -59,6 +59,30 @@ ant de senaryo yo.
 - **Livrab:** tès otomatik sou règ kalite yo; dokimantasyon an kreyòl (achitekti, relans manyèl,
   kijan pou ajoute yon endikatè); fòmasyon espesyalis MEAL la; kòd la remèt nan depo Git APA a.
 - **Akseptasyon:** espesyalis MEAL la relanse yon etap epi li ajoute yon endikatè poukont li.
+
+# Sa APA ap jwenn
+
+Nan fen misyon an, men sa APA ap genyen, ak faz ki livre chak eleman:
+
+| Livrab | Sa li pote pou APA | Faz |
+|:----------------------|:----------------------------------------------------|:--------|
+| **Dachbòd Looker Studio** | Filtè pa dat, depatman, komin ak kowòt; kat, endikatè kle ak tandans. Chak grafik gen pwòp rekèt li, kidonk ajoute oswa korije yon endikatè fasil. | 1 |
+| **Google Sheet MEAL** | Chak jou, done ki gen pwoblèm (doublon, valè ki manke, dat ki pa koryan) pou ofisye MEAL la korije yo nan sous la. | 1 |
+| **Bakòp MySQL** | Yon nouvo tablo apa nan baz APA a; tablo ki la deja yo ak aplikasyon PHP a pa chanje. Aplikasyon PHP a ka itilize l pita. | 1 |
+| **Mizajou san doublon** | Chak script mete ajou sèlman sa ki chanje (*upsert*); si li relanse de fwa, anyen pa double. | 1, verifye nan 3 |
+| **Ranmase pa API** | Sèlman sa ki chanje, san navigatè, si plan CommCare a pèmèt li. | 2 |
+| **Dokimantasyon ak fòmasyon** | Dokimantasyon an kreyòl; espesyalis MEAL la ka relanse, siveye epi konprann chak etap. | 3 |
+
+# Dire
+
+Misyon ap dire **3 mwa**. 3 mwa sa yo ap pèmèt:
+
+- Nou byen devlope pwojè an
+- Nou byen komprann done PLDL yo
+- Nou byen teste pwojè an
+- Asire solidite sistèm nou mete an plas lan
+- Pou sèten nou rete nan limit kote nou pa ogmante depans sèvis niyaj AWS, Hostinger e GCP, APA yo.
+- Byen dokumante pwojè an e fè fòmasyon pou spesyalis MEAL lan.
 
 # Pri ak enfrastrikti
 

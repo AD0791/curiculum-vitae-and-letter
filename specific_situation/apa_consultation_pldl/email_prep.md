@@ -20,7 +20,7 @@ Procédure, arbitrages et limites de ce qui peut être affirmé. Le courriel pr�
 | CV, sans le poste APA | `Alexandro_Disla_CV_APA_FR.pdf` (+ `.docx`, `.md`) | 2 |
 | Proposition V1 · Direksyon | `APA_Pwopozisyon_Teknik_V1_Direksyon.pdf` (+ `.md`) | 3 |
 | Proposition V2 · Teknik | `APA_Pwopozisyon_Teknik_V2_Teknik.pdf` (+ `.md`) | 3 |
-| Proposition V3 · Faz pa faz | `APA_Pwopozisyon_Teknik_V3_Faz_pa_Faz.pdf` (+ `.md`) | 2 |
+| Proposition V3 · Faz pa faz | `APA_Pwopozisyon_Teknik_V3_Faz_pa_Faz.pdf` (+ `.md`) | 3 |
 
 **On n'envoie qu'une seule des trois propositions**, avec le CV. Pour un seul fichier :
 `pdfunite outputs/APA_Pwopozisyon_Teknik_V1_Direksyon.pdf outputs/Alexandro_Disla_CV_APA_FR.pdf outputs/Alexandro_Disla_Dossier_APA.pdf`
@@ -28,17 +28,20 @@ Procédure, arbitrages et limites de ce qui peut être affirmé. Le courriel pr�
 
 ## Choisir la version
 
-Les trois couvrent les deux scénarios CommCare, le coût, la durée et la preuve de travail. Elles
-diffèrent par le lecteur visé :
+Les trois couvrent les deux scénarios CommCare, ce qu'APA obtient (section « Sa APA ap jwenn »), le
+coût, la durée et la preuve de travail. **La durée est ferme : 3 mois**, avec les six justifications
+qu'il a rédigées lui-même (développer, comprendre les données PLDL, tester, garantir la solidité,
+rester dans les dépenses cloud actuelles d'APA, documenter et former). Elles diffèrent par le
+lecteur visé :
 
 - **V1 · Direksyon** : pour la direction. Peu de jargon ; le flux en trois étapes, le choix du
   scénario selon le plan CommCare, ce qu'APA obtient, le coût, une courte présentation du
   consultant. À choisir si le lecteur décide sans être technicien.
 - **V2 · Teknik** : pour le spécialiste MEAL ou un relecteur technique. Architecture complète par
   fournisseur, tableau des trois Lambda, clés d'*upsert* par dépôt, contrôles qualité, sécurité,
-  requêtes GoogleSQL, risques. À choisir si quelqu'un d'APA va vérifier la faisabilité.
+  livrables détaillés (Lambda, dashboard en GoogleSQL, table `commcare_pldl`), risques. À choisir si quelqu'un d'APA va vérifier la faisabilité.
 - **V3 · Faz pa faz** : feuille de route en quatre phases avec livrables et critères d'acceptation,
-  sans durée par phase. À choisir si APA n'est pas sûr de son plan CommCare : la phase 2 (API)
+  sans durée par phase, puis un tableau qui rattache chaque livrable à la phase qui le produit. À choisir si APA n'est pas sûr de son plan CommCare : la phase 2 (API)
   devient conditionnelle, et la seule pièce qui change est mise en évidence.
 
 ## Ce qui a été vérifié (sources consultées le 25 octobre 2026)

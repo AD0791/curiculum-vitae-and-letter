@@ -25,6 +25,9 @@
 \AtBeginDocument{\RaggedRight}
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
+% Pa janm kite yon sèl liy paragraf poukont li anlè oswa anba yon paj.
+\widowpenalty=10000
+\clubpenalty=10000
 \renewcommand{\figurename}{Figi}
 \renewcommand{\tablename}{Tablo}
 \DeclareCaptionFont{apagray}{\color{apagray}}
@@ -51,7 +54,7 @@
 \titlespacing*{\subsection}{0pt}{6pt}{2pt}
 
 % Tablo yo : pi piti, liy ble
-\AtBeginEnvironment{longtable}{\small}
+\AtBeginEnvironment{longtable}{\small\renewcommand{\arraystretch}{1.25}}
 \arrayrulecolor{apablue!55}
 
 % Tèt ak pye paj

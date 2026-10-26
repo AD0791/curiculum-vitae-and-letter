@@ -64,5 +64,6 @@ Décisions prises ensuite avec l'utilisateur (même séance) : CV en français, 
 seul CV de ce dossier ; trois versions par public (Direksyon, Teknik, Faz pa faz) ; captures STS
 présentées comme preuve de travail (Looker Studio, ingénieur de données chez Tekkod) ; coût
 d'infrastructure seulement, sans honoraires ; palette du logo APA ; pas de calendrier détaillé,
-une fenêtre de 2 à 3 mois (3 si nécessaire) ; schémas faciles à lire, construits avec les logos
+une fenêtre de 2 à 3 mois (3 si nécessaire), remplacée le même jour par une durée ferme de 3 mois
+avec ses six justifications ; schémas faciles à lire, construits avec les logos
 de chaque élément.

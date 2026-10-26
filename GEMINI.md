@@ -126,10 +126,17 @@ letter: the proposal does that job. It differs from an application dossier in fo
   mention the client when the user asked for that job to be removed.
 - **Kreyòl documents** use the client's own vocabulary (APA says *fòmilè*, *dachbòd*, *bakòp*,
   never *sondaj*), no space before `:`, ragged-right text without hyphenation (babel has no
-  Haitian Creole patterns), and no `lang` setting.
+  Haitian Creole patterns), and no `lang` setting. The user's spellings override any dictionary:
+  *done brit* (never *bwit*), *konntenè*, *apresa* in one word, *reyitilise*, *sèten*. When he
+  supplies Creole text himself, keep his wording and fix only unmistakable slips (stray letters,
+  French words such as *et* or *en plas*, missing accents), naming each fix so he can revert it.
+- **Every proposal version carries a "Sa APA ap jwenn" section**, shaped for its reader rather than
+  copied: plain bullets for leadership, the technical substance of each deliverable for a technical
+  reader, and a deliverable / benefit / phase table in a phased roadmap.
 
 Three LaTeX traps this dossier hit: the `needspace` package's `\penalty-100` makes TeX break pages
-early under `\raggedbottom`, so `apa_header.tex` defines its own `\apaneedspace`. `\lg` is already
+early under `\raggedbottom`, so `apa_header.tex` defines its own `\apaneedspace`. The header also sets
+`\widowpenalty` and `\clubpenalty` to 10000, so no paragraph leaves a single line alone on a page. `\lg` is already
 a math operator. `fontawesome5` writes *alt* icons starred (`\faSync*`, not `\faSyncAlt`).
 
 ## Agent Expertise
