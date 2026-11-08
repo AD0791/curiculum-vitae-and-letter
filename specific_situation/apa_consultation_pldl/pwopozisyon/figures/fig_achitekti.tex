@@ -3,6 +3,13 @@
 \input{fig_style}
 \newcommand{\zone}[5]{% x1 y1 x2 y2 koulè
   \draw[#5!45, fill=#5!4, line width=0.7pt, rounded corners=9pt] (#1,#2) rectangle (#3,#4);}
+% Vèsyon kontra a (fig_achitekti_api.tex defini \apaapi) : API CommCare a an premye.
+\ifdefined\apaapi
+  \tikzset{mone/.style={dashed, draw=apagray}}\def\monelbl{si API bloke}
+  \tikzset{mtwo/.style={draw=apablue, line width=1.1pt}}\def\mtwolbl{\textbf{API · priyorite}}
+\else
+  \tikzset{mone/.style={}, mtwo/.style={}}\def\monelbl{Senaryo 1}\def\mtwolbl{Senaryo 2}
+\fi
 \begin{document}
 \begin{tikzpicture}[x=1cm, y=1cm]
   % --- Zòn yo
@@ -22,15 +29,19 @@
   \node[card, minimum width=1.9cm, minimum height=2.2cm] (cc) at (1.275,5.9)
     {\includegraphics[height=0.8cm]{commcare_mark}\\[3pt]\lbl{Ka + fòmilè}\\\sub{pwogram PLDL}};
 
-  \node[align=center] at (1.275,4.15) {\sub{Plan Standard: S1}\\\sub{Plan Pro oswa plis: S2}};
+  \ifdefined\apaapi
+    \node[align=center] at (1.275,4.15) {\sub{API CommCare a}\\\sub{an premye}};
+  \else
+    \node[align=center] at (1.275,4.15) {\sub{Plan Standard: S1}\\\sub{Plan Pro oswa plis: S2}};
+  \fi
 
   % --- AWS : kolòn goch
   \hcard{eb}{4.65,7.3}{3.0cm}{\lgo{aws_eventbridge}}{EventBridge}{chak jou a minwi}
   \hcard[draw=apablue, line width=1.1pt]{l1}{4.65,5.9}{3.0cm}{\lgo{aws_lambda}}{Ranmase}{Lambda 1}
-  \node[card, minimum width=1.4cm, minimum height=0.85cm] (m1) at (3.9,4.5)
-    {\includegraphics[height=0.36cm]{playwright}\hspace{2pt}\includegraphics[height=0.3cm]{aws_ecr}\\[1pt]\sub{Senaryo 1}};
-  \node[card, minimum width=1.4cm, minimum height=0.85cm] (m2) at (5.4,4.5)
-    {\httpxbadge[6.4pt]\hspace{2pt}{\scriptsize\faKey}\\[1pt]\sub{Senaryo 2}};
+  \node[card, minimum width=1.4cm, minimum height=0.85cm, mone] (m1) at (3.9,4.5)
+    {\includegraphics[height=0.36cm]{playwright}\hspace{2pt}\includegraphics[height=0.3cm]{aws_ecr}\\[1pt]\sub{\monelbl}};
+  \node[card, minimum width=1.4cm, minimum height=0.85cm, mtwo] (m2) at (5.4,4.5)
+    {\httpxbadge[6.4pt]\hspace{2pt}{\scriptsize\faKey}\\[1pt]\sub{\mtwolbl}};
   \hcard{sm}{4.65,1.7}{3.0cm}{\lgo{aws_secrets}}{Sekrè yo}{Secrets Manager}
 
   % --- AWS : kolòn dwat

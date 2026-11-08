@@ -1,7 +1,8 @@
 #!/bin/bash
 # Build du dossier de consultation Anseye Pou Ayiti (APA) — données PLDL / CommCare.
-# Produit : le CV (PDF, DOCX, MD), les figures (PDF vectoriel + PNG 300 dpi) et les trois
-# propositions techniques en créole (PDF + MD), puis vérifie pagination, secrets et CV.
+# Produit : le CV (PDF, DOCX, MD), les figures (PDF vectoriel + PNG 300 dpi), les trois
+# propositions techniques en créole (PDF + MD) et, depuis l'acceptation, le contrat, l'exécution
+# du projet et les références (PDF + DOCX, via kontra/build_kontra.sh et referans/build_referans.sh), puis vérifie pagination, secrets et CV.
 
 set -euo pipefail
 
@@ -14,6 +15,7 @@ LOGO_DIR="$DIR/assets/logos"
 
 # Noms de fichiers
 CV_FR="Alexandro_Disla_CV_APA_FR"
+KONTRA_DIR="$DIR/kontra"
 PROPOSALS=(
     "v1_direksyon:APA_Pwopozisyon_Teknik_V1_Direksyon"
     "v2_teknik:APA_Pwopozisyon_Teknik_V2_Teknik"
@@ -62,7 +64,11 @@ for entry in "${PROPOSALS[@]}"; do
     sed 's#](figures/#](../pwopozisyon/figures/#g' "$src.md" > "$OUTPUT_DIR/$out.md"
 done
 
-# --- 4. Vérifications ---
+# --- 4. Après acceptation : contrat, exécution du projet et références (PDF + DOCX) ---
+"$KONTRA_DIR/build_kontra.sh"
+"$DIR/referans/build_referans.sh"
+
+# --- 5. Vérifications ---
 cd "$OUTPUT_DIR"
 echo "🔎 Vérifications..."
 FAIL=0

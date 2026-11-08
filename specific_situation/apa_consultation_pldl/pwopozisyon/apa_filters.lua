@@ -3,7 +3,7 @@
 -- 2. Lè yon tit swiv pa yon figi oswa yon tablo (touswit oswa apre yon paragraf), mande ase
 --    plas pou tit la pa rete poukont li anba yon paj pandan rès la ale sou paj swivan an.
 function Image(img)
-  if FORMAT:match('latex') and img.src:match('^figures/.+%.png$') then
+  if FORMAT:match('latex') and img.src:match('figures/.+%.png$') then
     img.src = img.src:gsub('%.png$', '.pdf')
   end
   return img

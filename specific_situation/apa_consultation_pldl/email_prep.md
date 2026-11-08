@@ -3,6 +3,78 @@
 Procédure, arbitrages et limites de ce qui peut être affirmé. Le courriel prêt à copier est dans
 [`emails.md`](emails.md) ; le brief d'origine, verbatim, dans [`inputs/brief_kliyan.md`](inputs/brief_kliyan.md).
 
+## Acceptation (courriel d'APA reçu le samedi 7 novembre 2026)
+
+APA retient la proposition après l'échange du mercredi 4 novembre et pose cinq conditions :
+travail autonome avec un minimum de supervision ; planifier les rencontres selon les étapes et la
+disponibilité de l'équipe ; respecter les valeurs (Solidarite, Ekselans, Respè, Angajman) et les
+principes de communication d'APA ; **deux mois à 2 000 USD par mois** ; **un modèle de contrat
+avec calendrier prévisionnel pour le mercredi 11 novembre** (le courriel écrit « 2027 » : c'est
+une coquille, le 11/11/2026 est bien un mercredi). APA demande aussi **deux contacts de
+référence** ; on en donne trois.
+
+### Ce qui part avec la réponse
+
+| Pièce | Fichier dans `outputs/` | Pages |
+|---|---|---|
+| Contrat, en kreyòl, en prose | `APA_Kontra_Konsiltasyon.pdf` + `.docx` (locaux, gitignorés) | 2 |
+| Exécution du projet | `APA_Egzekisyon_Pwoje.pdf` + `.docx` | 3 (4 en Word) |
+| Références | `Alexandro_Disla_Referans_APA.pdf` + `.docx` | 1 |
+
+Sources dans `kontra/` (`kontra.md`, `egzekisyon.md`, reconstruits par `./kontra/build_kontra.sh`)
+et `referans/` (`./referans/build_referans.sh`) ; `build_apa.sh` appelle les deux. Le Word est en
+Arial (Fira Sans et Montserrat ne sont pas installés chez APA) ; couleurs et logo APA conservés.
+
+**PDF du contrat remplissable** : quatre champs texte (nom et fonction du représentant d'APA, les
+deux dates) et deux champs de signature électronique (`SiyatiAPA`, `SiyatiKonsiltan`), signables
+dans Acrobat Reader (« Signer ») ou tout lecteur qui gère les signatures PDF. Les champs de
+signature sont posés par `kontra/add_sig_fields.py` (pyhanko), qui les place sur les cadres du
+tableau en lisant leur position dans le PDF. Dans le Word, la case signature est une simple ligne.
+
+### Ce que disent les deux documents (refonte du 8 novembre)
+
+- **Contrat en prose à la première personne**, sans articles : ce qu'APA attend, la solution, la
+  méthode agile (2 check-ins de 15 à 30 min par semaine avec le responsable MEAL, documentés et
+  partagés), la semaine 1 de prise en main (accès, code PHP mis dans une organisation GitHub APA
+  gratuite, formulaires ONA et CommCare, ses propres problèmes), la rencontre kadraj avec l'équipe
+  PL-DL, l'environnement de test, les 11 étapes, les livrables, le paiement, les retards.
+- **API CommCare prioritaire** ; Playwright seulement si l'API est bloquée ; tout changement
+  d'approche documenté et partagé. La figure d'architecture a une variante `fig_achitekti_api`
+  (les propositions gardent l'ancienne).
+- **Deux paiements de 2 000 USD** (modifié le 8 novembre) : le premier à la fin du premier mois
+  (15 décembre 2026) ; le second pour les livrables, une fois tout soumis et validé : documentation
+  du système, PowerPoint système, PowerPoint dashboard, code et documents sur le GitHub de
+  l'organisation. Le suivi administratif qu'il fait ne change pas ces dates.
+  Paiement par virement bancaire sur son compte en dollars US à la BUH, au nom d'Alexandro
+  Disla (ajouté au contrat le 8 novembre). Le numéro n'est pas dans le dépôt, qui est public : il
+  est dans `kontra/kont_bank.local` (gitignoré), et le contrat construit est gitignoré aussi.
+- **Retards** : seuls ceux qui dépendent de lui sont à sa charge (aucun coût en plus pour APA, même
+  un jour au-delà des deux mois) ; un retard qui ne dépend pas de lui ne retarde ni les paiements
+  ni la validation des livrables.
+- **Ordre des 11 étapes** : celui qu'il a écrit, sauf deux déplacements logiques : construire le
+  dashboard sur `base_test` (son point 9) vient avant le déploiement définitif (son point 10), et
+  la suppression de l'environnement de test (son point 8) vient après ce déploiement.
+- **Kreyòl** : ses formulations, avec des coquilles corrigées (`googlesheet_tes` →
+  `googlesheet_test`, « kenn » → « nou », « angwo » → « an gwo »).
+- Retirés de l'ancien modèle : le report du calendrier par simple
+  courriel, les clauses fiscalité, résiliation et litige, les principes de communication à remettre
+  en R1. La durée reste du 16 novembre 2026 au 15 janvier 2027.
+
+### À faire avant la réponse
+
+1. **Contacts des références (remplis le 8 novembre)** : Pierre Robinz Cassion
+   +509 4916-3700 / 3795-1719 / 3138-0001 ; Reginald Victor +509 4730-8025 (repris du dossier
+   FAES, titre donné le 7 novembre) ; Alex Bonhomme +509 3753-1020. Le build échoue si Christ-Love
+   Henry réapparaît (elle est déjà chez APA) ou s'il reste un `[a konplete]`.
+2. **Signer le contrat** dans le PDF (champ `SiyatiKonsiltan`) ou laisser APA signer en premier.
+3. **Relire la colonne « Kad kolaborasyon »** des références : elle décrit ce que chacun peut
+   attester (Caris : CommCare, MySQL, qualité des données ; Tekkod : pipelines, bases, dashboards ;
+   HANWASH : mWater, indicateurs, dashboards automatisés). À corriger si un répondant a vu autre
+   chose.
+4. **Prévenir les trois répondants** qu'APA peut les appeler.
+5. APA relira le contrat avec ses propres règles RH ou juridiques ; ne pas présenter le texte comme
+   un avis juridique.
+
 ## Situation
 
 | | |

@@ -134,6 +134,32 @@ letter: the proposal does that job. It differs from an application dossier in fo
   copied: plain bullets for leadership, the technical substance of each deliverable for a technical
   reader, and a deliverable / benefit / phase table in a phased roadmap.
 
+### After the client accepts (`kontra/`, `referans/`)
+
+Once APA accepted (7 November 2026), the dossier grew two self-contained sub-folders, each with its
+own build script that `build_apa.sh` also calls:
+
+- **`kontra/`** (`./kontra/build_kontra.sh`) holds two Kreyòl documents, each built to PDF and DOCX.
+  The first, `kontra.md`, is the contract: **two pages at most**, written as first-person prose
+  (« Mwen, Alexandro Disla… ») with short headings and **no numbered articles**. He rejected a
+  fourteen-article template as too heavy. The second, `egzekisyon.md`, is the execution document:
+  method, onboarding week, test and final environments, the steps, and the forecast calendar,
+  with figures. The contract PDF is fillable. A Lua filter (`kontra_filters.lua`) turns the
+  signature table's `` `[...]` `` cells into hyperref text fields, and `add_sig_fields.py` adds
+  two pyhanko `/Sig` fields over the drawn signature boxes, at positions it reads from the PDF with
+  `pdftotext -bbox`. It also moves the text fields up, because under xelatex hyperref places them a
+  line below their label and `\raisebox` does not move the annotation. The Word version uses Arial,
+  since the client's machines do not have Fira Sans or Montserrat. Placeholders are highlighted
+  yellow in both formats.
+- **`referans/`** (`./referans/build_referans.sh`) holds the one-page reference sheet. The build
+  fails if a contact is still `[a konplete]`, or if a referee who now works at the client
+  reappears.
+
+`pwopozisyon/apa_header.tex` exposes `\apaheadtext` and `\apakicker`, so another document can
+reuse the theme by passing a second `-H` file that redefines them, with no change to the
+proposals. `fig_achitekti.tex` has an API-first variant, `fig_achitekti_api.tex`, which sets
+`\apaapi` and then inputs the original.
+
 Three LaTeX traps this dossier hit: the `needspace` package's `\penalty-100` makes TeX break pages
 early under `\raggedbottom`, so `apa_header.tex` defines its own `\apaneedspace`. The header also sets
 `\widowpenalty` and `\clubpenalty` to 10000, so no paragraph leaves a single line alone on a page. `\lg` is already

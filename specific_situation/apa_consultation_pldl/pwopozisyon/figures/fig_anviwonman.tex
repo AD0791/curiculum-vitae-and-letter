@@ -1,0 +1,45 @@
+% Figi G : anviwònman tès ak anviwònman final, menm estrikti ; responsab MEAL la valide tès la
+% anvan deplwaman final la, epi tès la retire apre.
+\documentclass[tikz,border=4pt]{standalone}
+\input{fig_style}
+% Kat vètikal : \vcard{non}{x,y}{logo}{etikèt}{sou-etikèt}{opsyon}
+\newcommand{\vcard}[6]{%
+  \node[card, minimum width=2.08cm, minimum height=1.55cm, #6] (#1) at (#2) {};
+  \node at ($(#1.north)+(0,-0.42)$) {#3};
+  \node[align=center] at ($(#1.south)+(0,0.42)$) {\lbl{#4}\\[-2pt]\sub{#5}};}
+% Yon koulwa : \koulwa{y}{koulè}{tit}{sifiks non yo}{tèks dachbòd}{mo kreyòl}
+\newcommand{\koulwa}[6]{%
+  \fill[#2!6, rounded corners=8pt] (0,#1-1.35) rectangle (17,#1+1.55);
+  \draw[#2!55, line width=0.7pt, rounded corners=8pt] (0,#1-1.35) rectangle (17,#1+1.55);
+  \node[anchor=west, text=#2, font=\headfont\fontsize{8.8pt}{10pt}\selectfont] at (0.25,#1+1.22) {#3};
+  \vcard{cc#4}{1.35,#1}{\lgo[0.5cm]{commcare_mark}}{CommCare}{lyen API #6}{}
+  \vcard{la#4}{3.7,#1}{\lgo[0.5cm]{aws_lambda}}{Lambda}{3 script #6}{}
+  \vcard{s3#4}{6.05,#1}{\lgo[0.5cm]{aws_s3}}{S3}{bucket #6}{}
+  \vcard{gs#4}{8.6,#1}{\lgo[0.5cm]{google_sheets}}{Google Sheet}{googlesheet\_#4}{}
+  \vcard{bq#4}{10.95,#1}{\lgo[0.5cm]{bigquery}}{BigQuery}{base\_#4}{}
+  \vcard{my#4}{13.3,#1}{\lgo[0.5cm]{mysql}}{Bakòp MySQL}{tablo bakòp #6}{}
+  \vcard{lk#4}{15.65,#1}{\lgo[0.5cm]{looker_studio}}{Dachbòd}{#5}{}
+  \draw[flow] (cc#4.east) -- (la#4.west);
+  \draw[flow] (la#4.east) -- (s3#4.west);
+  \draw[flow] (s3#4.east) -- (gs#4.west);
+  \draw[flow] (s3#4.north) ++(0.5,0) |- ++(0,0.22) -| (bq#4.north);
+  \draw[flow] (s3#4.north) ++(0.5,0) |- ++(0,0.22) -| (my#4.north);
+  \draw[flow] (bq#4.south) |- ++(0,-0.2) -| (lk#4.south);}
+\begin{document}
+\begin{tikzpicture}[x=1cm, y=1cm]
+  \koulwa{4.1}{apablue}{Anviwònman tès}{test}{sou base\_test}{tès}
+  \koulwa{0}{apaink}{Anviwònman final (pwodiksyon)}{final}{dachbòd final}{final}
+  % Tès la retire apre deplwaman final la
+  \node[anchor=east, text=apacoral] at (16.8,5.32)
+    {\sub{\textcolor{apacoral}{\faTrash*}\enspace retire apre deplwaman final la}};
+  % Validasyon responsab MEAL la ant de koulwa yo
+  \draw[flow, line width=1.2pt, apablue] (8.5,2.72) -- (8.5,1.58);
+  \node[pill, fill=white, draw=apablue, text=apablue, anchor=west] at (8.75,2.15)
+    {\faUserCheck\enspace Responsab MEAL la valide, apre sa deplwaman final};
+  \node[pill, fill=white, draw=apagray, text=apagray, anchor=east] at (8.25,2.15)
+    {menm estrikti, menm script};
+  % Lejann
+  \node[anchor=west] at (0,-1.7) {\sub{%
+    API CommCare a an premye ; responsab MEAL la gen aksè ak de anviwònman yo.}};
+\end{tikzpicture}
+\end{document}
