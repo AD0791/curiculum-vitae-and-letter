@@ -19,7 +19,7 @@ Mwen dakò ak kondisyon de baz yo. M ap travay nan fason otonòm, ak yon minimò
 
 Jan nou te mande l la, mwen voye de dokiman, chak an PDF ak an Word. Premye a se kontra a, sou de paj: li di sa APA ap tann de mwen, solisyon mwen prevwa, fason m ap travay ak peman an. Dezyèm nan, « Egzekisyon pwojè a », bay detay sou kijan m ap mete pwojè a an plas, ak kalandriye previzyonèl la: travay la kòmanse lendi 16 novanm 2026 epi li fini vandredi 15 janvye 2027. N ap priyorize API CommCare a, epi tout chanjman apwòch ap dokimante epi pataje ak ekip la.
 
-M ap travay ak metòd ajil, ak de rankont check-in chak semèn ak responsab MEAL la. Peman an ap fèt an de fwa: 2 000 USD nan fen premye mwa a, ak 2 000 USD lè m fin remèt dokiman sistèm nan ak de prezantasyon PowerPoint yo epi responsab MEAL la valide yo. PDF kontra a gen chan pou ranpli ak chan pou siyati elektwonik.
+M ap travay ak metòd ajil, ak de rankont check-in chak semèn ak responsab MEAL la. Peman an ap fèt an de fwa: 2 000 USD nan fen premye mwa a, ak 2 000 USD lè m fin remèt dokiman sistèm nan ak de prezantasyon PowerPoint yo epi responsab MEAL la valide yo. Mwen deja siyen kontra a nan PDF la; li gen chan pou nou ranpli ak yon chan pou siyati elektwonik APA a.
 
 Mwen tache tou yon dokiman ak twa kontak referans: Pierre Robinz Cassion, Manadjè IT nan Caris Foundation International; Reginald Victor, Solution Manager nan BRANA ak tech lead nan Tekkod; ak Alex Bonhomme, Responsab MEAL nan HANWASH.
 

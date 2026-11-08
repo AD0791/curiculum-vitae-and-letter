@@ -5,6 +5,8 @@ assets/logos/_src/**/*.zip
 # Numéro de compte bancaire : hors du dépôt public. Le build le lit dans kontra/kont_bank.local,
 # donc le contrat construit (qui le contient) reste local lui aussi.
 kontra/*.local
+# Siyati konsiltan an (imaj) : pa janm nan depo piblik la.
+kontra/*.local.*
 kontra/.kontra_build.md
 outputs/APA_Kontra_Konsiltasyon*.pdf
 outputs/APA_Kontra_Konsiltasyon*.docx

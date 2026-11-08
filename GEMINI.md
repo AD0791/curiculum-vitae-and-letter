@@ -156,7 +156,11 @@ own build script that `build_apa.sh` also calls:
   the Word file.** A PDF exported from Word has no form fields and no signature fields. The user
   learned this on 8 November, when his `_vf` edits made in Word had to be carried back into
   `kontra.md` and rebuilt. Account number: `kontra/kont_bank.local` (gitignored) replaces
-  `KONT_BUH` at build time, because the repo is public.
+  `KONT_BUH` at build time, because the repo is public. His handwritten signature is in the same situation. The
+  filter puts `kontra/siyati.local.png` (gitignored by `kontra/*.local.*`) into the consultant box
+  of the PDF only, and `add_sig_fields.py` then adds just the APA signature field. That PNG was
+  extracted from a phone photo of ink on ruled paper. The ink separates from the blue rules on
+  `b - r` (about 77 for ink, about 36 for the rules), and the result is exported with alpha.
 - **`referans/`** (`./referans/build_referans.sh`) holds the one-page reference sheet. The build
   fails if a contact is still `[a konplete]`, or if a referee who now works at the client
   reappears.

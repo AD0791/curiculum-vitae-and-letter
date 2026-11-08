@@ -17,6 +17,12 @@ local sigs = {
 function Code(c)
   if not c.text:match('^%[.*%]$') then return nil end
   if FORMAT:match('latex') then
+    -- Siyati konsiltan an : imaj li (kontra/siyati.local.png, gitignore) si li la, nan PDF la sèlman.
+    if c.text == '[Siyati konsiltan]' and io.open('siyati.local.png', 'r') then
+      return pandoc.RawInline('latex', '\\raisebox{-0.5cm}{\\fcolorbox{apagray!45}{white}{' ..
+        '\\parbox[b][1.3cm][c]{5.4cm}{\\centering\\includegraphics[height=1.05cm,width=5cm,' ..
+        'keepaspectratio]{siyati.local.png}}}}')
+    end
     if sigs[c.text] then
       return pandoc.RawInline('latex', '\\raisebox{-0.5cm}{\\fcolorbox{apagray!45}{white}{' ..
         '\\parbox[b][1.3cm][b]{5.4cm}{\\tiny\\color{white}' .. sigs[c.text] .. '}}}')

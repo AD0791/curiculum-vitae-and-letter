@@ -52,8 +52,10 @@ for line in bbox.splitlines():
         specs.append(SigFieldSpec(sig_field_name=MARKS[m.group(3)], on_page=page,
                                   box=(int(x), int(y_bottom), int(x + BOX_W), int(y_bottom + BOX_H))))
 
-if len(specs) != len(MARKS):
-    sys.exit(f"❌ {len(specs)} mak siyati jwenn nan {path}, {len(MARKS)} te espere.")
+# Kare APA a toujou gen yon chan siyati. Kare konsiltan an pa genyen youn lè siyati l deja
+# parèt kòm imaj (kontra/siyati.local.png).
+if "SiyatiAPA" not in [sp.sig_field_name for sp in specs]:
+    sys.exit(f"❌ Mak siyati APA a pa jwenn nan {path}.")
 
 with open(path, "rb") as f:
     writer = IncrementalPdfFileWriter(f)

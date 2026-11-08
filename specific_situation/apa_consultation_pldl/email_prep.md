@@ -29,7 +29,10 @@ Arial (Fira Sans et Montserrat ne sont pas installés chez APA) ; couleurs et lo
 deux dates) et deux champs de signature électronique (`SiyatiAPA`, `SiyatiKonsiltan`), signables
 dans Acrobat Reader (« Signer ») ou tout lecteur qui gère les signatures PDF. Les champs de
 signature sont posés par `kontra/add_sig_fields.py` (pyhanko), qui les place sur les cadres du
-tableau en lisant leur position dans le PDF. Dans le Word, la case signature est une simple ligne.
+tableau en lisant leur position dans le PDF. Dans le Word, la case signature est une simple ligne. **Depuis le 8 novembre, sa signature manuscrite est déjà dans la case
+consultant du PDF** (image tirée d'une photo, `kontra/siyati.local.png`, gitignorée). Il ne reste
+alors qu'un champ de signature, celui d'APA, et la date du consultant reste à remplir. Le Word
+n'a pas l'image.
 
 ### Ce que disent les deux documents (refonte du 8 novembre)
 
