@@ -33,7 +33,7 @@ fi
 sed "s/KONT_BUH/$(tr -d '[:space:]' < kont_bank.local)/" kontra.md > .kontra_build.md
 pandoc -o .default.docx --print-default-data-file reference.docx
 # source:sortie:en-tête LaTeX propre:en-tête Word
-for entry in ".kontra_build:APA_Kontra_Konsiltasyon:kontra_header.tex:Kontra konsiltasyon · Zouti PL-DL yo sou CommCare" \
+for entry in ".kontra_build:APA_Kontra_Konsiltasyon_vf:kontra_header.tex:Kontra konsiltasyon · Zouti PL-DL yo sou CommCare" \
              "egzekisyon:APA_Egzekisyon_Pwoje:egzekisyon_header.tex:Egzekisyon pwojè a · Zouti PL-DL yo sou CommCare"; do
     IFS=: read -r src out htex head <<< "$entry"
     echo "📜 $src.md -> $out.pdf + .docx"
@@ -49,12 +49,12 @@ done
 rm -f .default.docx .kontra_build.md
 
 # Contrat : champs texte alignés + deux champs de signature électronique.
-uv run --quiet --with pyhanko --with pypdf python add_sig_fields.py "$OUTPUT_DIR/APA_Kontra_Konsiltasyon.pdf"
+uv run --quiet --with pyhanko --with pypdf python add_sig_fields.py "$OUTPUT_DIR/APA_Kontra_Konsiltasyon_vf.pdf"
 
 # --- Vérifications ---
-pages=$(pdfinfo "$OUTPUT_DIR/APA_Kontra_Konsiltasyon.pdf" | awk '/^Pages:/ {print $2}')
+pages=$(pdfinfo "$OUTPUT_DIR/APA_Kontra_Konsiltasyon_vf.pdf" | awk '/^Pages:/ {print $2}')
 if [ "$pages" -gt 2 ]; then
-    echo "❌ APA_Kontra_Konsiltasyon.pdf fait $pages pages (2 au maximum)."; exit 1
+    echo "❌ APA_Kontra_Konsiltasyon_vf.pdf fait $pages pages (2 au maximum)."; exit 1
 fi
-echo "✅ APA_Kontra_Konsiltasyon.pdf : $pages pages"
+echo "✅ APA_Kontra_Konsiltasyon_vf.pdf : $pages pages"
 echo "ℹ️  APA_Egzekisyon_Pwoje.pdf : $(pdfinfo "$OUTPUT_DIR/APA_Egzekisyon_Pwoje.pdf" | awk '/^Pages:/ {print $2}') pages"

@@ -151,6 +151,12 @@ own build script that `build_apa.sh` also calls:
   line below their label and `\raisebox` does not move the annotation. The Word version uses Arial,
   since the client's machines do not have Fira Sans or Montserrat. Placeholders are highlighted
   yellow in both formats.
+  The final contract is built as `outputs/APA_Kontra_Konsiltasyon_vf.{pdf,docx}`, and both files are
+  gitignored because they carry the bank account number (see below). **Edit `kontra.md`, never
+  the Word file.** A PDF exported from Word has no form fields and no signature fields. The user
+  learned this on 8 November, when his `_vf` edits made in Word had to be carried back into
+  `kontra.md` and rebuilt. Account number: `kontra/kont_bank.local` (gitignored) replaces
+  `KONT_BUH` at build time, because the repo is public.
 - **`referans/`** (`./referans/build_referans.sh`) holds the one-page reference sheet. The build
   fails if a contact is still `[a konplete]`, or if a referee who now works at the client
   reappears.

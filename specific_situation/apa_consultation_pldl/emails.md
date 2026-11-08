@@ -2,7 +2,7 @@
 
 ## Réponse à l'acceptation (à envoyer au plus tard le mercredi 11 novembre 2026)
 
-En réponse au courriel d'APA du 7 novembre. Pièces jointes : `outputs/APA_Kontra_Konsiltasyon.pdf` et `.docx`, `outputs/APA_Egzekisyon_Pwoje.pdf`
+En réponse au courriel d'APA du 7 novembre. Pièces jointes : `outputs/APA_Kontra_Konsiltasyon_vf.pdf` et `.docx`, `outputs/APA_Egzekisyon_Pwoje.pdf`
 et `.docx`, et `outputs/Alexandro_Disla_Referans_APA.pdf`.
 Remplacer le nom après « Bonjou » par celui de la personne qui a écrit. Tout ce qui suit la ligne
 « Objet : » se copie et se colle tel quel.

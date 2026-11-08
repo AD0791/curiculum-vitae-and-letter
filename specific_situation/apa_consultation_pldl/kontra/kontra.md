@@ -14,7 +14,7 @@ vini ak kontra sa a, bay detay sou kijan m ap mete l an plas.
 
 # Sa APA ap tann de mwen
 
-Yon pati nan done pwogram PL-DL la ranmase sou CommCare. APA tann mwen mete an plas yon sistèm ki
+Yon pati nan done pwogram PL-DL la ranmase sou CommCare. APA swete mwen mete an plas yon sistèm ki
 rale tout fòmilè sa yo otomatikman, ki trete done yo, ki mete yo nan Google Drive responsab MEAL
 la, nan BigQuery ak nan yon tablo bakòp, epi ki alimante yon dachbòd Looker Studio. Mwen dwe
 dokimante sistèm nan epi fòme responsab MEAL la, pou ekip la ka sèvi avè l san mwen.
@@ -25,12 +25,12 @@ Mwen ap **priyorize API CommCare a** pou rale done yo : sistèm nan pran sèlman
 navigatè otomatik. Script yo ap mache sou AWS Lambda, nan enfrastrikti APA genyen deja. Done trete
 yo ap ale nan yon Google Sheet pou responsab MEAL la, nan BigQuery pou dachbòd la, ak nan yon tablo
 bakòp nan baz MySQL APA a. Tout travay la ap fèt nan yon **anviwònman tès** ki gen menm estrikti ak
-sistèm final la ; responsab MEAL la ap valide l, epi n ap retire l apre deplwaman final la. Si yon
+sistèm final la ; responsab MEAL la ap valide l, epi n ap retire l aprè deplwaman final la. Si yon
 chanjman apwòch vin nesesè, m ap dokimante l epi pataje l ak manm ekip APA yo.
 
 # Fason m ap travay
 
-Mwen ap travay ak **metòd ajil**. Chak semèn, m ap fè **de rankont « check-in »** de 15 a 30 minit
+Mwen ap travay ak **metòd ajil**. Chak semèn, m ap fè **de rankont « check-in »** 15 a 30 minit
 ak responsab MEAL la, pou m prezante avansman, eksplike difikilte mwen jwenn, epi pou nou chwazi pi
 bon apwòch la ansanm. Rankont sa yo sèvi tou pou fòme responsab MEAL la sou tout detay sistèm nan.
 M ap dokimante chak check-in epi pataje l ak responsab MEAL la ak rès ekip la.
@@ -41,8 +41,8 @@ ONA ak CommCare yo, epi li di m ki pwoblèm li menm li genyen ; m ap gade nan ki
 pandan kontra a. M ap mete kòd PHP a an sekirite nan yon **òganizasyon GitHub APA**, gratis, kote
 kòd la ap rete prive.
 
-Apre sa, n ap fè yon **rankont kadraj** ak responsab MEAL la ak responsab ekip PL-DL la, oswa yon
-manm ekip la, pou yo eksplike nou swivi ki fèt ak fòmilè CommCare yo ak sa yo vle jwenn nan dachbòd
+Aprè sa, n ap fè yon **rankont kadraj** ak responsab MEAL la ak responsab ekip PL-DL la, oswa yon
+manm ekip la, pou yo eksplike nou suivi ki fèt ak fòmilè CommCare yo ak sa yo vle jwenn nan dachbòd
 la. M ap dokimante rankont sa a epi voye l bay responsab MEAL la, menm jan ak sipò m pote sou lòt
 pati sistèm monitoring APA a.
 
@@ -52,8 +52,8 @@ Lè anviwònman tès la mache epi responsab MEAL la valide l, travay la fèt nan
 
 1. Rale tout fòmilè yo, san okenn pwoblèm.
 2. Trete done yo.
-3. Evalye si rale ak tretman done yo fèt nan yon tan akseptab.
-4. Mete done yo nan Google Drive responsab MEAL la, an Google Sheet (`googlesheet_test`, `googlesheet_final`), pou li ban nou fidbak epi fè swivi ak ekip PL-DL la.
+3. Evalye si rekiperasyon ak tretman done yo fèt nan yon tan akseptab.
+4. Mete done yo nan Google Drive responsab MEAL la (`googlesheet_test`, `googlesheet_final`), pou li ban nou fidbak epi fè suivi ak ekip PL-DL la.
 5. Mete done yo nan BigQuery (`base_test`, `base_final`).
 6. Mete done yo nan tablo bakòp la (tès, final).
 7. Mete kòd sous la ak dokiman yo sou GitHub òganizasyon APA a.
@@ -62,24 +62,27 @@ Lè anviwònman tès la mache epi responsab MEAL la valide l, travay la fèt nan
 10. Retire anviwònman tès la, lè nou sèten tout bagay pase byen nan deplwaman final la.
 11. Lè tout pwen sa yo soumèt epi valide, APA peye dezyèm peman an, pou livrab yo.
 
-# Livrab ak peman
+# Livrab ak pèman
 
-Mwen ap remèt : **dokiman sistèm nan** ; **de prezantasyon PowerPoint**, youn sou kijan sistèm nan
-mache ak youn sou kijan pou sèvi ak dachbòd la ; kòd sous la ak dokiman yo sou GitHub òganizasyon
-APA a ; ak sistèm nan an pwodiksyon, ak dachbòd final la.
+Mwen ap remèt nan fen kontra a :
 
-APA ap peye m **4 000 USD an de (2) peman** : **2 000 USD nan fen premye mwa a** (15 desanm 2026),
-ak **2 000 USD pou livrab yo**, lè tout livrab yo fin soumèt epi responsab MEAL la valide yo. Menm
-si m ap fè swivi administratif la epi soumèt dokiman ki ap fasilite chak peman, se dat sa yo m ap
-atann pou de peman yo. Peman yo fèt pa **vireman bankè** sou kont an dola ameriken mwen nan
-**BUH** (Banque de l'Union Haïtienne), nimewo **KONT_BUH**, nan non Alexandro Disla.
+- **Dokiman sistèm nan** ;
+- **De prezantasyon PowerPoint**, youn sou kijan sistèm nan mache ak youn sou kijan pou sèvi ak dachbòd la ;
+- Kòd sous la ak dokiman yo sou GitHub òganizasyon APA a ;
+- Sistèm nan an pwodiksyon, ak dachbòd final la.
+
+APA ap peye m **4 000 USD an de (2) pèman** : **2 000 USD nan fen premye mwa a** (15 desanm 2026),
+ak **2 000 USD pou livrab yo**, lè tout livrab yo fin soumèt epi responsab MEAL la valide yo.
+
+Menm si m ap fè suivi administratif la epi soumèt dokiman patant la, se dat sa yo mwen espere pou de
+pèman yo. Pèman yo ap fèt pa **vireman bankè** sou kont an dola ameriken mwen nan **BUH** (Banque de
+l'Union Haïtienne), nimewo **KONT_BUH**, nan **non Alexandro Disla**.
 
 # Reta
 
-Mwen atann mwen ak kèk reta, sitou nan faz priz aksè ak sistèm nan. Se **sèlman reta ki depann de
-mwen** ki tonbe sou mwen : si travay la ta depase de mwa yo akoz yon reta ki depann de mwen, menm yon
-jou, APA p ap gen pou peye okenn kòb anplis. Yon reta ki pa depann de mwen p ap retade pwosesis
-peman an ni validasyon livrab yo.
+Mwen atann mwen ak kèk reta, sitou nan faz aksè ak sistèm nan. Si travay la ta depase de mwa yo akoz
+yon reta ki depann de mwen, menm yon jou, APA p ap gen pou peye okenn kòb anplis. Toutfwa yon reta ki
+pa depann de mwen p ap retade pwosesis pèman an ni validasyon livrab yo.
 
 # Siyati
 

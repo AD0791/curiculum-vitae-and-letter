@@ -17,7 +17,7 @@ référence** ; on en donne trois.
 
 | Pièce | Fichier dans `outputs/` | Pages |
 |---|---|---|
-| Contrat, en kreyòl, en prose | `APA_Kontra_Konsiltasyon.pdf` + `.docx` (locaux, gitignorés) | 2 |
+| Contrat, en kreyòl, en prose | `APA_Kontra_Konsiltasyon_vf.pdf` + `.docx` (locaux, gitignorés) | 2 |
 | Exécution du projet | `APA_Egzekisyon_Pwoje.pdf` + `.docx` | 3 (4 en Word) |
 | Références | `Alexandro_Disla_Referans_APA.pdf` + `.docx` | 1 |
 

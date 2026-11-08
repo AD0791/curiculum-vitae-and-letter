@@ -6,5 +6,5 @@ assets/logos/_src/**/*.zip
 # donc le contrat construit (qui le contient) reste local lui aussi.
 kontra/*.local
 kontra/.kontra_build.md
-outputs/APA_Kontra_Konsiltasyon.pdf
-outputs/APA_Kontra_Konsiltasyon.docx
+outputs/APA_Kontra_Konsiltasyon*.pdf
+outputs/APA_Kontra_Konsiltasyon*.docx
