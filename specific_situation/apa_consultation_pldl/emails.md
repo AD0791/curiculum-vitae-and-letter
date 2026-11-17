@@ -1,5 +1,33 @@
 # Courriel prêt à copier — Anseye Pou Ayiti, proposition technique PLDL
 
+## Retour du contrat signé (16 novembre 2026)
+
+En réponse au contrat modifié qu'APA a renvoyé. Pièce jointe : `feedback_manm_apa/APA_Kontra_Konsiltasyon_vf modifye161126_siyen.docx`
+(dossier gitignoré : il contient le numéro de compte et la signature). Remplacer le nom après « Bonjou ».
+Tout ce qui suit la ligne « Objet : » se copie et se colle tel quel.
+
+---
+
+Objet : Re: Kontra konsiltasyon PL-DL — vèsyon siyen an
+
+Bonjou [Non],
+
+Mèsi pou kontra a ak modifikasyon nou fè yo.
+
+Mwen tache vèsyon siyen an, nan menm fòma Word nou te voye l la. Mwen te oblije siyen l san DocuSign: mwen mete siyati mwen dirèkteman nan dokiman Word la, nan bwat konsiltan an, san m pa chanje anyen nan rès tèks la.
+
+Sa ki rete se pati APA a: non reprezantan an, fonksyon li, dat la ak siyati li. Si APA bezwen pou kontra a siyen sou DocuSign, nou mèt voye l ban mwen sou platfòm nan, m ap siyen l touswit.
+
+Mèsi ankò, e a byento.
+
+Alexandro Disla
+Konsiltan done ak MEAL
+Telefòn: (+509) 4148-3700
+alexandrodisla@hotmail.com
+https://github.com/AD0791
+
+---
+
 ## Réponse à l'acceptation (à envoyer au plus tard le mercredi 11 novembre 2026)
 
 En réponse au courriel d'APA du 7 novembre. Pièces jointes : `outputs/APA_Kontra_Konsiltasyon_vf.pdf` et `.docx`, `outputs/APA_Egzekisyon_Pwoje.pdf`
