@@ -1,5 +1,33 @@
 # Courriel prêt à copier — Anseye Pou Ayiti, proposition technique PLDL
 
+## Confirmation DocuSign et rencontre du 20 novembre (19 novembre 2026)
+
+En réponse au courriel d'APA demandant si le DocuSign a été reçu et signé, et proposant une rencontre
+le lendemain à midi. Répondre directement dans le fil pour garder l'objet. Remplacer le nom après
+« Bonjou ». Tout ce qui suit la ligne `---` se copie et se colle tel quel.
+
+---
+
+Bonjou [Non],
+
+Mèsi pou mesaj ou a. Jounen m ap pase byen, e m swete pa w la ap pase byen tou.
+
+Wi, mwen resevwa imèl DocuSign nan, e mwen deja siyen kontra a sou platfòm nan. M espere nou byen resevwa siyati mwen an. Si gen kichòy ki manke, fè m konnen, m ap regle l touswit.
+
+Mwen vrèman kontan pou m travay ak nou sou pwojè PL-DL la.
+
+Pou rankont demen an, wi, mwen ta dwe disponib a midi. Si m ta gen yon anpèchman, m ap avèti w pa imèl 10 a 20 minit anvan, epi n a ka repouse rankont lan pou 1 è p.m.
+
+A demen, e mèsi ankò.
+
+Alexandro Disla
+Devlopè Lojisyèl, Konsiltan Done ak MEAL
+Telefòn: (+509) 4148-3700
+alexandrodisla@hotmail.com
+https://github.com/AD0791
+
+---
+
 ## Retour du contrat signé (16 novembre 2026)
 
 En réponse au contrat modifié qu'APA a renvoyé. Pièce jointe : `feedback_manm_apa/APA_Kontra_Konsiltasyon_vf modifye161126_siyen.docx`
