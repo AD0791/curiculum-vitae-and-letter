@@ -3,6 +3,23 @@
 Procédure, arbitrages et limites de ce qui peut être affirmé. Le courriel prêt à copier est dans
 [`emails.md`](emails.md) ; le brief d'origine, verbatim, dans [`inputs/brief_kliyan.md`](inputs/brief_kliyan.md).
 
+## Suivi depuis l'envoi du contrat
+
+| Date | Événement |
+|---|---|
+| 11 novembre 2026 | Contrat, exécution du projet et références envoyés à APA |
+| 16 novembre 2026 | APA renvoie le contrat modifié en Word ; il le signe dans le Word (image de signature, sans DocuSign) et le retourne. Les deux versions sont dans `feedback_manm_apa/` (gitignoré : compte bancaire et signature) |
+| 19 novembre 2026 | APA envoie le contrat par **DocuSign** ; il le **signe sur la plateforme** et le confirme par courriel (`emails.md`, première section) |
+| 20 novembre 2026, 13 h | Première rencontre avec APA, sur Google Meet. Prévue d'abord à midi ; Nedgine (APA) la fixe à 13 h le matin même. Il n'a pas reçu l'invitation de calendrier et demande le lien par courriel et par WhatsApp 30 minutes avant (`emails.md`, première section) |
+
+**Le contrat signé fait foi sur DocuSign**, pas dans le dépôt : les PDF et Word de `outputs/` et de
+`feedback_manm_apa/` sont des versions de travail. Son interlocutrice à APA est **Nedgine**
+(« Madam Nedgine » dans les courriels) ; sa fonction et son nom de famille ne sont pas au dossier.
+
+**Titre de signature des courriels depuis le 19 novembre** : « Devlopè Lojisyèl, Konsiltan Done ak
+MEAL ». Les courriels plus anciens de `emails.md` portent « Konsiltan done ak MEAL » et restent tels
+qu'envoyés.
+
 ## Acceptation (courriel d'APA reçu le samedi 7 novembre 2026)
 
 APA retient la proposition après l'échange du mercredi 4 novembre et pose cinq conditions :
@@ -69,7 +86,7 @@ n'a pas l'image.
    +509 4916-3700 / 3795-1719 / 3138-0001 ; Reginald Victor +509 4730-8025 (repris du dossier
    FAES, titre donné le 7 novembre) ; Alex Bonhomme +509 3753-1020. Le build échoue si Christ-Love
    Henry réapparaît (elle est déjà chez APA) ou s'il reste un `[a konplete]`.
-2. **Signer le contrat** dans le PDF (champ `SiyatiKonsiltan`) ou laisser APA signer en premier.
+2. ~~**Signer le contrat**~~ : fait, sur DocuSign le 19 novembre 2026 (voir « Suivi » plus haut).
 3. **Relire la colonne « Kad kolaborasyon »** des références : elle décrit ce que chacun peut
    attester (Caris : CommCare, MySQL, qualité des données ; Tekkod : pipelines, bases, dashboards ;
    HANWASH : mWater, indicateurs, dashboards automatisés). À corriger si un répondant a vu autre

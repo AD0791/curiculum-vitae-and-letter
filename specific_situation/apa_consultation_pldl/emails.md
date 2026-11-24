@@ -1,5 +1,31 @@
 # Courriel prêt à copier — Anseye Pou Ayiti, proposition technique PLDL
 
+## Rencontre déplacée à 13 h, lien Google Meet pas reçu (20 novembre 2026)
+
+En réponse au courriel de Nedgine (APA) du 20 novembre : elle fixe la rencontre à 13 h et dit avoir
+partagé une invitation de calendrier avec le lien Google Meet, qu'il n'a pas reçue. Répondre
+directement dans le fil. Tout ce qui suit la ligne `---` se copie et se colle tel quel.
+
+---
+
+Bonjou Madam Nedgine,
+
+Lannuit lan byen pase, m espere li te byen pase pou ou tou.
+
+Dakò, n ap fè rankont lan a 1 è p.m.
+
+Mwen poko resevwa envitasyon an ni lyen Google Meet lan. Tanpri, èske ou ka pataje l avè m pa imèl, epi sou WhatsApp tou, 30 minit anvan rankont lan?
+
+Mèsi, e a talè.
+
+Alexandro Disla
+Devlopè Lojisyèl, Konsiltan Done ak MEAL
+Telefòn: (+509) 4148-3700
+alexandrodisla@hotmail.com
+https://github.com/AD0791
+
+---
+
 ## Confirmation DocuSign et rencontre du 20 novembre (19 novembre 2026)
 
 En réponse au courriel d'APA demandant si le DocuSign a été reçu et signé, et proposant une rencontre

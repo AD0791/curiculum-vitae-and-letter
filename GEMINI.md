@@ -161,6 +161,12 @@ own build script that `build_apa.sh` also calls:
   of the PDF only, and `add_sig_fields.py` then adds just the APA signature field. That PNG was
   extracted from a phone photo of ink on ruled paper. The ink separates from the blue rules on
   `b - r` (about 77 for ink, about 36 for the rules), and the result is exported with alpha.
+- **The client's own revisions and the binding signature live outside the build.** APA sent back
+  its edited Word contract on 16 November 2026; that file and his signed copy sit in
+  `feedback_manm_apa/` (gitignored, since they carry the account number and the signature) and
+  are never fed back into `kontra.md`. The contract was then signed on **DocuSign** on 19 November,
+  and that copy is the one that binds. The repo's PDFs and DOCX are working versions. The
+  timeline and the next meeting are kept in `email_prep.md` under « Suivi ».
 - **`referans/`** (`./referans/build_referans.sh`) holds the one-page reference sheet. The build
   fails if a contact is still `[a konplete]`, or if a referee who now works at the client
   reappears.
